@@ -669,7 +669,13 @@ button {
 .review__content:hover {
   opacity: 1;
 }
+.review__content--active {
+  opacity: 1;
+}
 
+/*.review__content--active {
+    opacity: 1;
+}*/
 .review__btn {
   background-color: #2f3234;
   width: 110px;

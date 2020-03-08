@@ -32,7 +32,13 @@
     &:hover {
         opacity: 1;
     }
+    &--active {
+        opacity: 1;
+    }
 }
+/*.review__content--active {
+    opacity: 1;
+}*/
 
 .review__btn {
     background-color: #2f3234;
