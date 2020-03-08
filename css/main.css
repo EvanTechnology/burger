@@ -417,7 +417,7 @@ button {
 }
 
 .welcome-container {
-  background: url(/icons/video-bg.png) center center/cover no-repeat;
+  background: url(../../icons/video-bg.png) center center/cover no-repeat;
   border: 1px solid #ffffff;
 }
 
@@ -444,7 +444,7 @@ button {
 
 .welcome__image {
   width: 50%;
-  background: url(/icons/drops.png) no-repeat;
+  background: url(../../icons/drops.png) no-repeat;
 }
 
 .welcome__text {
