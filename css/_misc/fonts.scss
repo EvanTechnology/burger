@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+}
+@font-face {
+    font-family: 'Lifehack Medium';
+    src: url('/fonts/Lifehack\ Medium.otf');
+}
+@font-face {
+    font-family: 'Gagalin Regular';
+    src: url('/fonts/Gagalin/Gagalin-Regular.otf');
+}
+@mixin ubuntu($style:light) {
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    @if $style == light {
+        font-weight: 300;
+    }
+    @if $style == medium {
+        font-weight: 500;
+    }
+    @if $style == bold {
+        font-weight: bold;
+    }
+    
+}
+@mixin gagalin() {
+	font-family: 'Gagalin Regular', Helvetica, sans-serif;
+}
+@mixin lifehack() {
+	font-family: 'Lifehack Medium';
+}

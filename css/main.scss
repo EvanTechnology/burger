@@ -1,0 +1,16 @@
+
+$orange: #e45028;
+$yellow: #f9b436;
+$black: #2f3234;
+$red: #e35028;
+
+
+@import "_misc/fonts.scss";
+@import "_misc/normalize.scss";
+@import "_misc/layout.scss";
+@import "blocks/welcome.scss";
+@import "blocks/sidebar.scss";
+@import "blocks/we.scss";
+@import "blocks/section.scss";
+@import "blocks/header.scss";
+@import "blocks/reviews.scss";

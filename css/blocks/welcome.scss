@@ -1,0 +1,45 @@
+.welcome-container {
+    background: url(/icons/video-bg.png) center center / cover no-repeat;
+    border: 1px solid #ffffff;
+}
+
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.sidebar {
+    width: 50px;
+}
+.main {
+    flex: 1;
+    padding-left: 80px;
+}
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.welcome__image {
+    width: 50%;
+    background: url(/icons/drops.png) no-repeat;
+}
+.welcome__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome__description {
+  @include lifehack();
+  font-size: 65px;
+  font-style: normal;
+  line-height: 1;
+  text-align: left;
+  color: #ffffff;
+}
+.control {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}

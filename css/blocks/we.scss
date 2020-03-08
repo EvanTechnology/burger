@@ -1,0 +1,37 @@
+.we-container {
+    background-image: url(/icons/we_bg.png);
+}
+.we__title {
+    text-align: center;
+    padding-top: 135px;
+}
+.we__content {
+    padding: 0 25px;
+}
+.list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.list__item {
+    max-width: 285px;
+}
+.pros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pros__image {
+    margin-bottom: 30px;
+}
+.pros__title {
+    @include lifehack();
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.pros__description {
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+    opacity: 0.8;
+}
+
