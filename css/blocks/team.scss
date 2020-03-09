@@ -1,0 +1,94 @@
+.team {
+    position: relative;
+    background: url(../../icons/team_bg.jpg) center center / cover no-repeat;
+}
+.team__container {
+    width: 50%;
+    height: 100%;
+    background: url(../../icons/team_grey_bg.png) center center / cover no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+.team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__title {
+    padding-top: 100px;;
+}
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    padding-left: 115px;
+}
+
+.accordeon__title {
+    @include gagalin();
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    &:before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        width: 0px;
+        height: 0px;
+        border: 8px solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: 0px;
+    }
+}
+.accordeon__description {
+    height: 0;
+    overflow: hidden;
+}
+.profile {
+    display: flex;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    justify-content: flex-start;
+
+}
+.profile__image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile__content {
+    flex: 1;
+    line-height: 24px;
+    padding-left: 20px;
+}
+.profile__position {
+    @include ubuntu(bold);
+}
+.profile__description {
+    @include ubuntu(light);
+}
+.accordeon__item--active {
+    .accordeon__title {
+        color: $yellow;
+        &:before {
+            border-top-width: 0px;
+            border-bottom-color: #ffffff;
+            border-bottom-width: 8px;
+        }
+    };
+    .accordeon__description {
+        height: auto;
+        overflow: hidden;
+    }
+
+
+    
+}
