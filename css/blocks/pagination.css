@@ -1,0 +1,39 @@
+.pagination {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination__item {
+  margin-bottom: 15px;
+}
+
+.pagination :last-child {
+  margin-bottom: 0px;
+}
+
+.pagination__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.pagination__dot:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pagination__dot--active:before {
+  border-color: #ffffff;
+}

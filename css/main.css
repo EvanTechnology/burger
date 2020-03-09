@@ -1,15 +1,51 @@
 @font-face {
   font-family: "Ubuntu";
-  src: url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+  src: url("../../fonts/Ubuntu-Light.woff2") format("woff2"), url("../../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Lifehack Medium";
-  src: url("/fonts/Lifehack Medium.otf");
+  font-family: "Ubuntu";
+  src: url("../../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Gagalin Regular";
-  src: url("/fonts/Gagalin/Gagalin-Regular.otf");
+  font-family: "Ubuntu";
+  src: url("../../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../../fonts/Ubuntu.woff2") format("woff2"), url("../../fonts/Ubuntu.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lifehack";
+  src: url("../../fonts/Lifehack-Medium.woff2") format("woff2"), url("../../fonts/Lifehack-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gagalin";
+  src: url("../../fonts/Gagalin-Regular.woff2") format("woff2"), url("../../fonts/Gagalin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*@font-face {
+    font-family: 'Ubuntu';
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+}
+@font-face {
+    font-family: 'Lifehack Medium';
+    src: url('/fonts/Lifehack\ Medium.otf');
+}
+@font-face {
+    font-family: 'Gagalin Regular';
+    src: url('/fonts/Gagalin/Gagalin-Regular.otf');
+}*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -416,36 +452,32 @@ button {
   color: inherit;
 }
 
-.welcome-container {
+.welcome {
   background: url(../icons/video-bg.png) center center/cover no-repeat;
   border: 1px solid #ffffff;
   height: 100%;
+  justify-content: space-between;
 }
 
-.content {
+.welcome__content {
   display: flex;
-  flex-direction: row-reverse;
 }
 
-.sidebar {
-  width: 50px;
-}
-
-.main {
-  flex: 1;
-  padding-left: 80px;
-}
-
-.welcome {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
+/*.main {
+    flex: 1;
+    padding-left: 80px;
+}*/
+/*.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}*/
 .welcome__image {
   width: 50%;
-  background: url(../../icons/drops.png) no-repeat;
+  display: flex;
+  justify-content: center;
+  background: url(../../icons/drops.png) top center no-repeat;
 }
 
 .welcome__text {
@@ -456,7 +488,7 @@ button {
 }
 
 .welcome__description {
-  font-family: "Lifehack Medium";
+  font-family: "Lifehack";
   font-size: 65px;
   font-style: normal;
   line-height: 1;
@@ -470,20 +502,25 @@ button {
   margin-bottom: 50px;
 }
 
-.sidebar__control {
+.pagination {
+  width: 50px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 25%;
+  right: 20%;
+  transform: translateY(-50%);
 }
 
-.sidebar__item {
+.pagination__item {
   margin-bottom: 15px;
 }
 
-.sidebar__control :last-child {
+.pagination :last-child {
   margin-bottom: 0px;
 }
 
-.sidebar__dot {
+.pagination__dot {
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -491,7 +528,7 @@ button {
   position: relative;
 }
 
-.sidebar__dot:before {
+.pagination__dot:before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -505,13 +542,12 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.sidebar__dot_active:before {
+.pagination__item--active .pagination__dot:before {
   border-color: #ffffff;
 }
 
-.we-container {
+.we {
   background: url(../icons/we_bg.png) center center/cover no-repeat;
-  height: 100%;
 }
 
 .we__title {
@@ -519,8 +555,8 @@ button {
   padding-top: 135px;
 }
 
-.we__content {
-  padding: 0 25px;
+.we__list {
+  padding: 0px 25px;
 }
 
 .list {
@@ -543,7 +579,7 @@ button {
 }
 
 .pros__title {
-  font-family: "Lifehack Medium";
+  font-family: "Lifehack";
   font-size: 24px;
   margin-bottom: 25px;
 }
@@ -558,7 +594,6 @@ button {
 .section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100vh;
   min-height: 650px;
 }
@@ -566,17 +601,17 @@ button {
   justify-content: flex-start;
 }
 
-.section__title {
+.title {
   font-size: 72px;
   color: #f9b436;
   margin-bottom: 50px;
-  font-family: "Gagalin Regular", Helvetica, sans-serif;
+  font-family: "Gagalin", Helvetica, sans-serif;
 }
-.section__title--black {
+.title--black {
   color: #2f3234;
 }
 
-.header__container {
+.header {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -586,7 +621,7 @@ button {
   padding: 15px 80px;
 }
 
-.header__logo {
+.logo {
   width: 100px;
 }
 
@@ -594,10 +629,9 @@ button {
   margin-left: auto;
 }
 
-.header__btn {
-  width: 100px;
-}
-
+/*.header__btn {
+    width: 100px;
+}*/
 .menu {
   display: flex;
   align-items: center;
@@ -631,13 +665,14 @@ button {
   text-align: center;
   font-size: 13px;
   display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.reviews__container {
-  background-color: #2f3234;
-  height: 100%;
-}
-
+/*.reviews__container {
+    background-color: $black;
+    height: 100%;
+}*/
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
@@ -651,6 +686,8 @@ button {
 }
 
 .review__photo {
+  width: 100%;
+  height: 100%;
   filter: grayscale(1);
 }
 

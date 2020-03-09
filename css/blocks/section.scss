@@ -1,7 +1,6 @@
 .section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
     min-height: 650px;
     &--align--top {
@@ -10,7 +9,7 @@
 
 }
 
-.section__title {
+.title {
     font-size: 72px;
     color: $yellow;
     margin-bottom: 50px;

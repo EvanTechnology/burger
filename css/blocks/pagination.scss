@@ -1,21 +1,28 @@
-.sidebar__control {
+
+.pagination {
+    width: 50px;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 25%;
+    right: 20%;
+    transform: translateY(-50%);
+
 }
-.sidebar__item {
+.pagination__item {
     margin-bottom: 15px;
 }
-.sidebar__control :last-child {
+.pagination :last-child {
     margin-bottom: 0px;
 }
-.sidebar__dot {
+.pagination__dot {
     width: 4px;
     height: 4px;
     border-radius: 50%;
     background-color: #ffffff;
     position: relative;
 }
-.sidebar__dot:before {
+.pagination__dot:before {
     content: '';
     display: inline-block;
     width: 10px;
@@ -28,6 +35,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.sidebar__dot_active:before {
-    border-color: #ffffff;
+.pagination__item--active {
+    .pagination__dot:before {
+        border-color: #ffffff;
+    }
 }

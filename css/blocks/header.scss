@@ -1,5 +1,5 @@
 $itemsMargin: 10px;
-.header__container {
+.header {
     display: flex;
     justify-content: space-between;
     color: #ffffff;
@@ -8,15 +8,15 @@ $itemsMargin: 10px;
     align-items: center;
     padding: 15px 80px;
 }
-.header__logo {
+.logo {
     width: 100px ;
 }
 .header__menu {
     margin-left: auto;
 }
-.header__btn {
+/*.header__btn {
     width: 100px;
-}
+}*/
 .menu {
     display: flex;
     align-items: center;
@@ -46,4 +46,6 @@ $itemsMargin: 10px;
     text-align: center;
     font-size: 13px;
     display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
 }
