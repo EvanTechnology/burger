@@ -475,7 +475,7 @@ button {
   width: 50%;
   display: flex;
   justify-content: center;
-  background: url(../../icons/drops.png) top center no-repeat;
+  background: url(../../icons/drops.svg) top center no-repeat;
 }
 
 .welcome__burger {
@@ -580,6 +580,11 @@ button {
   margin-bottom: 30px;
 }
 
+.pics {
+  width: 200px;
+  height: 100px;
+}
+
 .pros__pic {
   max-width: 100%;
 }
@@ -629,6 +634,11 @@ button {
 
 .logo {
   width: 100px;
+}
+
+.logo__image {
+  width: 100px;
+  height: 150px;
 }
 
 .menu {
@@ -812,7 +822,7 @@ button {
 }
 .accordeon__item--active .accordeon__title:before {
   border-top-width: 0px;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #f9b436;
   border-bottom-width: 8px;
 }
 .accordeon__item--active .accordeon__description {
