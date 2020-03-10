@@ -440,11 +440,19 @@ p {
 }
 
 .container {
-  width: 1100px;
+  width: 960px;
   margin: 0 auto;
-  position: relative;
-  padding: 0px;
-  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  min-height: 650px;
+}
+.container--we {
+  justify-content: center;
+}
+.container--reviews {
+  width: 1100px;
 }
 
 button {
@@ -463,21 +471,15 @@ button {
   display: flex;
 }
 
-/*.main {
-    flex: 1;
-    padding-left: 80px;
-}*/
-/*.welcome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}*/
 .welcome__image {
   width: 50%;
   display: flex;
   justify-content: center;
   background: url(../../icons/drops.png) top center no-repeat;
+}
+
+.welcome__burger {
+  max-width: 100%;
 }
 
 .welcome__text {
@@ -578,6 +580,10 @@ button {
   margin-bottom: 30px;
 }
 
+.pros__pic {
+  max-width: 100%;
+}
+
 .pros__title {
   font-family: "Lifehack";
   font-size: 24px;
@@ -625,14 +631,11 @@ button {
   width: 100px;
 }
 
-.header__menu {
+.menu {
   margin-left: auto;
 }
 
-/*.header__btn {
-    width: 100px;
-}*/
-.menu {
+.menu__list {
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -658,21 +661,11 @@ button {
   display: none;
 }
 
-.btn {
-  background-color: #e35028;
-  border-radius: 5px;
-  padding: 10px 25px;
-  text-align: center;
-  font-size: 13px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 500;
+.reviews {
+  background-color: #2f3234;
+  height: 100%;
 }
 
-/*.reviews__container {
-    background-color: $black;
-    height: 100%;
-}*/
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
@@ -710,24 +703,6 @@ button {
   opacity: 1;
 }
 
-/*.review__content--active {
-    opacity: 1;
-}*/
-.review__btn {
-  background-color: #2f3234;
-  width: 110px;
-  height: 37px;
-  border-radius: 5px;
-  padding: 12px 15px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.review__btn:hover {
-  background-color: #1f2122;
-}
-
 .review__name {
   font-family: Gagalin Regular;
   text-transform: uppercase;
@@ -758,6 +733,7 @@ button {
 .team__content {
   display: flex;
   flex-direction: column;
+  width: 85%;
   align-items: center;
 }
 
@@ -842,4 +818,24 @@ button {
 .accordeon__item--active .accordeon__description {
   height: auto;
   overflow: hidden;
+}
+
+.btn {
+  background-color: #e35028;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 14px;
+  /*display: inline-block;*/
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #f9b436;
+}
+.btn--black {
+  background-color: #2f3234;
+}
+.btn--black:hover {
+  background-color: #1f2122;
 }

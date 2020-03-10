@@ -1,0 +1,20 @@
+.btn {
+    background-color: $red;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 14px;
+    /*display: inline-block;*/
+    text-transform: uppercase;
+    font-weight: 600;
+    &:hover {
+        background-color: $yellow;
+    }
+    &--black {
+        background-color: $black;
+        &:hover {
+            background-color: #1f2122;
+        };
+    };
+}
+

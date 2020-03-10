@@ -23,6 +23,9 @@
 .pros__image {
     margin-bottom: 30px;
 }
+.pros__pic {
+    max-width: 100%;
+}
 .pros__title {
     @include lifehack();
     font-size: 24px;
