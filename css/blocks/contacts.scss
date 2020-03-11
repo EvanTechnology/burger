@@ -1,0 +1,61 @@
+.contacts {
+    background-color: $black;
+}
+.map {
+    overflow: hidden;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: $black;
+    display: flex;
+    
+}
+.contacts__details {
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contacts__address {
+    color: $white;
+}
+.phone__logo {
+    width: 15px;
+    height: 15px;
+}
+.contacts__phone {
+    display: inline;
+    color: $red;
+    @include ubuntu(bold);
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: url(../../icons/phone.svg) center center/cover no-repeat;
+        margin-right: 15px;
+    }
+}
+.socials__list {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+}
+.socials__item {
+    margin-right: 25px;
+}
+.socials__logo {
+    width: 25px;
+    height: 25px;
+    fill: #575757;
+    &:hover {
+        fill: $white;
+    };
+}

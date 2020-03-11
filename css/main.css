@@ -453,10 +453,16 @@ p {
 }
 .container--reviews {
   width: 1100px;
+  max-height: 650px;
 }
 .container--menu {
   width: 1100px;
   position: relative;
+}
+.container--contacts {
+  width: 1100px;
+  position: relative;
+  max-height: 650px;
 }
 
 button {
@@ -924,4 +930,76 @@ button {
 .menu__description {
   flex: 1;
   width: 0px;
+  overflow: hidden;
+}
+
+.contacts {
+  background-color: #2f3234;
+}
+
+.map {
+  overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #2f3234;
+  display: flex;
+}
+
+.contacts__details {
+  width: 50%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contacts__address {
+  color: #ffffff;
+}
+
+.phone__logo {
+  width: 15px;
+  height: 15px;
+}
+
+.contacts__phone {
+  display: inline;
+  color: #e35028;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.contacts__phone:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../../icons/phone.svg) center center/cover no-repeat;
+  margin-right: 15px;
+}
+
+.socials__list {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.socials__item {
+  margin-right: 25px;
+}
+
+.socials__logo {
+  width: 25px;
+  height: 25px;
+  fill: #575757;
+}
+.socials__logo:hover {
+  fill: #ffffff;
 }
