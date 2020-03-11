@@ -5,7 +5,7 @@
     min-height: 650px;
     &--align--top {
         justify-content: flex-start;
-    }
+    };
 
 }
 
@@ -16,5 +16,8 @@
     @include gagalin();
     &--black {
         color: $black;
-    }
+    };
+    &--white {
+        color: $white;
+    };
 }

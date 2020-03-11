@@ -3,6 +3,8 @@ $orange: #e45028;
 $yellow: #f9b436;
 $black: #2f3234;
 $red: #e35028;
+$white: #ffffff;
+
 
 
 @import "_misc/fonts.scss";
@@ -16,3 +18,5 @@ $red: #e35028;
 @import "blocks/reviews.scss";
 @import "blocks/team.scss";
 @import "blocks/btn.scss";
+@import "blocks/menu.scss";
+@import "blocks/contacts.scss";

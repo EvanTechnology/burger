@@ -1,0 +1,72 @@
+.menu {
+    position: relative;
+    background: url(../../icons/menu_bg.jpg) center center / cover no-repeat;
+}
+.menu__title {
+    margin-top: 110px;
+    margin-left: 95px;
+}
+.menu__accordeon {
+    /*filter: grayscale(0.5);*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+.menu__item {
+    display: flex;
+    height: 100%;
+    filter: grayscale(0.75);
+    &--meatlovers {
+        background: url(../../icons/menu_meatlovers_bg.jpg) center center / cover no-repeat;
+        .menu__name {
+            background: url(../../icons/menu_meatlovers.jpg);
+        }
+    };
+    &--vegetarian {
+        background: url(../../icons/menu_vegetarians_bg.jpg) center center / cover no-repeat;
+        .menu__name {
+            background: url(../../icons/menu_vegetarians.jpg);
+        }
+    };
+    &--lowcarbs {
+        background: url(../../icons/menu_lowcarbs_bg.jpg) center center / cover no-repeat;
+        .menu__name {
+            background: url(../../icons/menu_lowcarbs.jpg);
+        }
+    };
+    &--active {
+        .menu__description {
+            min-width: 400px;
+            padding: 100px 20px;
+        };
+    };
+
+}
+
+.menu__name {
+    width: 80px;
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    @include gagalin();
+    transform: rotate(180deg);
+    padding: 35px 20px;
+    
+}
+.menu__description {
+    flex: 1;
+    width: 0px;
+}
+
+
+

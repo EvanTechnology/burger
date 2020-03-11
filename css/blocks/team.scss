@@ -15,24 +15,24 @@
 .team__content {
     display: flex;
     flex-direction: column;
-    width: 85%;
-    align-items: center;
+    max-width: 550px;
+    align-items: flex-start;
 }
 
 .team__title {
     padding-top: 100px;
-    ;
+    padding-left: 100px;
 }
 
-.accordeon {
+.team__list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: #ffffff;
-    padding-left: 115px;
+    padding-left: 100px;
 }
 
-.accordeon__title {
+.team__name {
     @include gagalin();
     text-transform: uppercase;
     font-size: 14px;
@@ -50,16 +50,14 @@
     }
 }
 
-.accordeon__description {
-    height: 0;
-    overflow: hidden;
-}
-
 .profile {
     display: flex;
-    padding-left: 35px;
+    padding: 0px 35px;
     margin-bottom: 25px;
     justify-content: flex-start;
+    height: 0;
+    overflow: hidden;
+    max-width: 450px;
 
 }
 
@@ -90,8 +88,8 @@
     @include ubuntu(light);
 }
 
-.accordeon__item--active {
-    .accordeon__title {
+.team__item--active {
+    .team__name {
         color: $yellow;
 
         &:before {
@@ -103,7 +101,7 @@
 
     ;
 
-    .accordeon__description {
+    .profile {
         height: auto;
         overflow: hidden;
     }

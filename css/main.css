@@ -454,6 +454,10 @@ p {
 .container--reviews {
   width: 1100px;
 }
+.container--menu {
+  width: 1100px;
+  position: relative;
+}
 
 button {
   border: none;
@@ -621,6 +625,9 @@ button {
 .title--black {
   color: #2f3234;
 }
+.title--white {
+  color: #ffffff;
+}
 
 .header {
   display: flex;
@@ -629,7 +636,6 @@ button {
   text-transform: uppercase;
   font-weight: 500;
   align-items: center;
-  padding: 15px 80px;
 }
 
 .logo {
@@ -641,23 +647,23 @@ button {
   height: 150px;
 }
 
-.menu {
+.header-menu {
   margin-left: auto;
 }
 
-.menu__list {
+.header-menu__list {
   display: flex;
   align-items: center;
   margin-right: 10px;
 }
 
-.menu__item {
+.header-menu__item {
   display: flex;
   align-items: center;
   margin-left: 10px;
 }
 
-.menu__item:after {
+.header-menu__item:after {
   content: "";
   display: block;
   height: 5px;
@@ -667,7 +673,7 @@ button {
   background-color: #ffffff;
 }
 
-.menu :last-child:after {
+.header-menu :last-child:after {
   display: none;
 }
 
@@ -743,29 +749,30 @@ button {
 .team__content {
   display: flex;
   flex-direction: column;
-  width: 85%;
-  align-items: center;
+  max-width: 550px;
+  align-items: flex-start;
 }
 
 .team__title {
   padding-top: 100px;
+  padding-left: 100px;
 }
 
-.accordeon {
+.team__list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: #ffffff;
-  padding-left: 115px;
+  padding-left: 100px;
 }
 
-.accordeon__title {
+.team__name {
   font-family: "Gagalin", Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   padding: 15px;
 }
-.accordeon__title:before {
+.team__name:before {
   content: "";
   display: inline-block;
   margin-right: 10px;
@@ -776,16 +783,14 @@ button {
   border-bottom-width: 0px;
 }
 
-.accordeon__description {
-  height: 0;
-  overflow: hidden;
-}
-
 .profile {
   display: flex;
-  padding-left: 35px;
+  padding: 0px 35px;
   margin-bottom: 25px;
   justify-content: flex-start;
+  height: 0;
+  overflow: hidden;
+  max-width: 450px;
 }
 
 .profile__image {
@@ -817,15 +822,15 @@ button {
   font-weight: 300;
 }
 
-.accordeon__item--active .accordeon__title {
+.team__item--active .team__name {
   color: #f9b436;
 }
-.accordeon__item--active .accordeon__title:before {
+.team__item--active .team__name:before {
   border-top-width: 0px;
   border-bottom-color: #f9b436;
   border-bottom-width: 8px;
 }
-.accordeon__item--active .accordeon__description {
+.team__item--active .profile {
   height: auto;
   overflow: hidden;
 }
@@ -848,4 +853,75 @@ button {
 }
 .btn--black:hover {
   background-color: #1f2122;
+}
+
+.menu {
+  position: relative;
+  background: url(../../icons/menu_bg.jpg) center center/cover no-repeat;
+}
+
+.menu__title {
+  margin-top: 110px;
+  margin-left: 95px;
+}
+
+.menu__accordeon {
+  /*filter: grayscale(0.5);*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+.menu__item {
+  display: flex;
+  height: 100%;
+  filter: grayscale(0.75);
+}
+.menu__item--meatlovers {
+  background: url(../../icons/menu_meatlovers_bg.jpg) center center/cover no-repeat;
+}
+.menu__item--meatlovers .menu__name {
+  background: url(../../icons/menu_meatlovers.jpg);
+}
+.menu__item--vegetarian {
+  background: url(../../icons/menu_vegetarians_bg.jpg) center center/cover no-repeat;
+}
+.menu__item--vegetarian .menu__name {
+  background: url(../../icons/menu_vegetarians.jpg);
+}
+.menu__item--lowcarbs {
+  background: url(../../icons/menu_lowcarbs_bg.jpg) center center/cover no-repeat;
+}
+.menu__item--lowcarbs .menu__name {
+  background: url(../../icons/menu_lowcarbs.jpg);
+}
+.menu__item--active .menu__description {
+  min-width: 400px;
+  padding: 100px 20px;
+}
+
+.menu__name {
+  width: 80px;
+  writing-mode: vertical-lr;
+  font-size: 40px;
+  font-family: "Gagalin", Helvetica, sans-serif;
+  transform: rotate(180deg);
+  padding: 35px 20px;
+}
+
+.menu__description {
+  flex: 1;
+  width: 0px;
 }
