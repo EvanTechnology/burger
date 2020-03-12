@@ -66,6 +66,10 @@ p {
         position: relative;
         max-height: 650px;
     };
+    &--order {
+        align-items: center;
+        justify-content: center;
+    }
 }
 button {
     border: none;

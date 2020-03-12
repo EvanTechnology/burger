@@ -1,0 +1,120 @@
+.order {
+    background: url(../../icons/order_bg.jpg) center center / cover no-repeat;
+}
+.order__form {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    color: $white;
+    @include ubuntu(light);
+}
+.order__column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0px;
+    };
+}
+.order__row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0px;
+    };
+    &--radio {
+        justify-content: start;
+    }
+}
+.order__title {
+    margin-bottom: 12px;
+}
+.order__block {
+    /*width: 50%;*/
+    flex: 1;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0px;
+    };
+}
+.order__input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    &--comments {
+        height: 90px;
+        resize: vertical;
+    };
+}
+.radio {
+    display: flex;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.radio__point {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    vertical-align: top;
+    background-color: $white;
+    border: solid 1px $white;
+    position: relative;
+    margin-right: 10px;
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+.radio__input {
+    display: none;
+}
+.radio__input:checked +.radio__point:before {
+    background-color: $red;
+}
+.checkbox {
+    display: flex;
+}
+.checkbox__input {
+    display: none;
+}
+.checkbox__point {
+    height: 16px;
+    width: 16px;
+    vertical-align: top;
+    background-color: $white;
+    border: solid 1px $white;
+    position: relative;
+    margin-right: 10px;
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        /*background: url(../../icons/checkmark.png);*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $red;
+
+    }
+}
+.checkbox__input:checked +.checkbox__point:before {
+        background: url(../../icons/checkmark.png);
+}

@@ -9,12 +9,20 @@
     font-weight: 600;
     &:hover {
         background-color: $yellow;
-    }
+    };
     &--black {
         background-color: $black;
         &:hover {
             background-color: #1f2122;
         };
     };
+    &--reset {
+        background-color: transparent;
+        margin-right: 20px;
+        &:hover {
+            background-color: #1f2122;
+        }
+        
+    }
 }
 
