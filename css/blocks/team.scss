@@ -20,8 +20,9 @@
 }
 
 .team__title {
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 6.25rem;
+    padding-left: 6.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .team__list {
@@ -29,41 +30,41 @@
     flex-direction: column;
     justify-content: flex-start;
     color: #ffffff;
-    padding-left: 100px;
+    padding-left: 6.25rem;
 }
 
 .team__name {
     @include gagalin();
     text-transform: uppercase;
-    font-size: 14px;
-    padding: 15px;
+    font-size: 1rem;
+    padding: 0.625rem;
 
     &:before {
         content: "";
         display: inline-block;
-        margin-right: 10px;
-        width: 0px;
-        height: 0px;
-        border: 8px solid transparent;
+        margin-right: 0.625rem;
+        width: 0rem;
+        height: 0rem;
+        border: 0.5rem solid transparent;
         border-top-color: $yellow;
-        border-bottom-width: 0px;
+        border-bottom-width: 0rem;
     }
 }
 
 .profile {
     display: flex;
-    padding: 0px 35px;
-    margin-bottom: 25px;
+    padding: 0rem 2.1875rem;
+    margin-bottom: 1.5625rem;
     justify-content: flex-start;
     height: 0;
     overflow: hidden;
-    max-width: 450px;
+    max-width: 28.125rem;
 
 }
 
 .profile__image {
-    width: 110px;
-    height: 110px;
+    width: 7.1875rem;
+    height: .1875rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -76,8 +77,8 @@
 
 .profile__content {
     flex: 1;
-    line-height: 24px;
-    padding-left: 20px;
+    line-height: 1.5rem;
+    padding-left: 2.1875rem;
 }
 
 .profile__position {
@@ -93,9 +94,9 @@
         color: $yellow;
 
         &:before {
-            border-top-width: 0px;
+            border-top-width: 0rem;
             border-bottom-color: $yellow;
-            border-bottom-width: 8px;
+            border-bottom-width: 0.5rem;
         }
     }
 

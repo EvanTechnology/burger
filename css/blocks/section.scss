@@ -10,9 +10,9 @@
 }
 
 .title {
-    font-size: 72px;
+    font-size: 5.5rem;
     color: $yellow;
-    margin-bottom: 50px;
+    
     @include gagalin();
     &--black {
         color: $black;
@@ -20,4 +20,7 @@
     &--white {
         color: $white;
     };
+    &--order {
+        margin-bottom: 3.125rem;
+    }
 }

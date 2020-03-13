@@ -1,9 +1,9 @@
 .btn {
     background-color: $red;
-    border-radius: 5px;
-    padding: 10px 25px;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 1.5625rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     /*display: inline-block;*/
     text-transform: uppercase;
     font-weight: 600;
@@ -18,7 +18,7 @@
     };
     &--reset {
         background-color: transparent;
-        margin-right: 20px;
+        margin-right: 1.25rem;
         &:hover {
             background-color: #1f2122;
         }

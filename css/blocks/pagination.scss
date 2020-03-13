@@ -1,6 +1,6 @@
 
 .pagination {
-    width: 50px;
+    width: 3.125rem;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -10,14 +10,14 @@
 
 }
 .pagination__item {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 .pagination :last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
 }
 .pagination__dot {
-    width: 4px;
-    height: 4px;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
     background-color: #ffffff;
     position: relative;
@@ -25,10 +25,10 @@
 .pagination__dot:before {
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 0.0625rem solid transparent;
     background-color: transparent;
     position: absolute;
     top: 50%;

@@ -23,12 +23,12 @@
 .review__content {
     display: flex;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     flex-direction: column;
     height: 100%;
     align-items: flex-start;
-    padding: 50px 20px;
+    padding: 3.125rem 1.25rem;
     color: #ffffff;
     opacity: 0;
     &:hover {
@@ -47,7 +47,7 @@
 }
 .review__text {
     font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 15px;
+    line-height: 1.5rem;
+    margin-bottom: 0.9375rem;
     text-align: left;
 }

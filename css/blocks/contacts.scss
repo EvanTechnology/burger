@@ -9,14 +9,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 3.75rem;
     background-color: $black;
     display: flex;
     
 }
 .contacts__details {
     width: 50%;
-    padding-left: 80px;
+    padding-left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -25,8 +25,8 @@
     color: $white;
 }
 .phone__logo {
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
 }
 .contacts__phone {
     display: inline;
@@ -35,10 +35,10 @@
     &:before {
         content: "";
         display: inline-block;
-        width: 12px;
-        height: 12px;
+        width: 0.75rem;
+        height: 0.75rem;
         background: url(../../icons/phone.svg) center center/cover no-repeat;
-        margin-right: 15px;
+        margin-right: 0.9375rem;
     }
 }
 .socials__list {
@@ -46,14 +46,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 60px;
+    padding-right: 3.75rem;
 }
 .socials__item {
-    margin-right: 25px;
+    margin-right: 1.5625rem;
 }
 .socials__logo {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     fill: #575757;
     &:hover {
         fill: $white;
