@@ -9,7 +9,9 @@ $white: #ffffff;
 
 @import "_misc/fonts.scss";
 @import "_misc/normalize.scss";
+@import "_misc/media.scss";
 @import "_misc/layout.scss";
+
 @import "blocks/welcome.scss";
 @import "blocks/pagination.scss";
 @import "blocks/we.scss";

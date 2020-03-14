@@ -4,6 +4,7 @@ $itemsMargin: 0.625rem;
     justify-content: space-between;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 0.8125rem;
     font-weight: 500;
     align-items: center;
 }
@@ -12,7 +13,7 @@ $itemsMargin: 0.625rem;
 }
 .logo__image {
     width: 6.25rem;
-    height: 9.375rem;
+    height: 6.375rem;
 }
 .header-menu {
     margin-left: auto;
@@ -22,6 +23,10 @@ $itemsMargin: 0.625rem;
     display: flex;
     align-items: center;
     margin-right: $itemsMargin;
+
+    @include tablets {
+        display: none;
+    }
 }
 .header-menu__item {
     display: flex;
@@ -39,4 +44,12 @@ $itemsMargin: 0.625rem;
 }
 .header-menu :last-child:after {
     display: none;
+}
+.hamburger__menu {
+    margin-left: 1.25rem;
+    display: none;
+
+    @include tablets {
+        display: initial;
+    }
 }

@@ -10,18 +10,28 @@
     position: absolute;
     top: 0%;
     left: 50%;
+
+    @include tablets {
+        width: 100%;
+        left: 0%;
+    };
 }
 
 .team__content {
     display: flex;
     flex-direction: column;
-    max-width: 550px;
     align-items: flex-start;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    };
 }
 
 .team__title {
     padding-top: 6.25rem;
-    padding-left: 6.25rem;
+    padding-left: 5%;
     margin-bottom: 2.25rem;
 }
 
@@ -30,7 +40,7 @@
     flex-direction: column;
     justify-content: flex-start;
     color: #ffffff;
-    padding-left: 6.25rem;
+    padding-left: 7%;
 }
 
 .team__name {
@@ -60,13 +70,21 @@
     overflow: hidden;
     max-width: 28.125rem;
 
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 .profile__image {
     width: 7.1875rem;
-    height: .1875rem;
+    height: 7.1875rem;
     border-radius: 50%;
     overflow: hidden;
+    margin: 0.9375rem 1.25rem;
+    flex-shrink: 0;
 }
 
 .profile__photo {
@@ -78,15 +96,16 @@
 .profile__content {
     flex: 1;
     line-height: 1.5rem;
-    padding-left: 2.1875rem;
 }
 
 .profile__position {
     @include ubuntu(bold);
+    margin-bottom: 0.9375rem;
 }
 
 .profile__description {
     @include ubuntu(light);
+    margin-bottom: 0.9375rem;
 }
 
 .team__item--active {
