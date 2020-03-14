@@ -1,6 +1,6 @@
 .reviews {
     background-color: $black;
-    height: 100%;
+    /*min-height: fit-content;*/
 }
 .reviews__list {
     display: flex;
@@ -43,11 +43,29 @@
 .review__name {
     font-family: Gagalin Regular;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 .review__text {
     font-weight: 300;
     line-height: 1.5rem;
     margin-bottom: 0.9375rem;
     text-align: left;
+}
+@media (max-width:768px) {
+    html {
+        font-size: 13px;
+        .container {
+            max-width: 470px;
+            height: auto;
+        };
+        .reviews__item {
+            width: 50%;
+
+        };
+    };
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
 }
