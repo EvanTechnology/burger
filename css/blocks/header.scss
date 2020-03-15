@@ -47,9 +47,18 @@ $itemsMargin: 0.625rem;
 }
 .hamburger__menu {
     margin-left: 1.25rem;
+    transition: 0.5s;
     display: none;
 
     @include tablets {
         display: initial;
-    }
+    };
+}
+.hamburger__line {
+    width: 2.1875rem;
+    height: 0.3125rem;
+    background-color: $white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+
 }

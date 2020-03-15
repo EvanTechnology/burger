@@ -506,6 +506,11 @@ button {
   justify-content: center;
   background: url(../../icons/drops.svg) no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .welcome__image {
+    width: 100%;
+  }
+}
 
 .welcome__burger {
   max-width: 100%;
@@ -743,12 +748,21 @@ button {
 
 .hamburger__menu {
   margin-left: 1.25rem;
+  transition: 0.5s;
   display: none;
 }
 @media screen and (max-width: 768px) {
   .hamburger__menu {
     display: initial;
   }
+}
+
+.hamburger__line {
+  width: 2.1875rem;
+  height: 0.3125rem;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  border-radius: 2px;
 }
 
 .reviews {
@@ -810,6 +824,7 @@ button {
   .review__content {
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
 

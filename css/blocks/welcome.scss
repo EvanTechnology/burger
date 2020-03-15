@@ -23,6 +23,10 @@
     display: flex;
     justify-content: center;
     background: url(../../icons/drops.svg) no-repeat;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 .welcome__burger {
     max-width: 100%;
