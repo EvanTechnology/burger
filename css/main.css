@@ -504,7 +504,7 @@ button {
   width: 50%;
   display: flex;
   justify-content: center;
-  background: url(../../icons/drops.svg) no-repeat;
+  background: url(../icons/drops.svg) no-repeat;
 }
 @media screen and (max-width: 768px) {
   .welcome__image {
@@ -1142,7 +1142,7 @@ button {
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
-  background: url(../../icons/phone.svg) center center/cover no-repeat;
+  background: url(../icons/phone.svg) center center/cover no-repeat;
   margin-right: 0.9375rem;
 }
 
