@@ -1038,22 +1038,22 @@ button {
   filter: grayscale(0.75);
 }
 .menu__item--meatlovers {
-  background: url(../../icons/menu_meatlovers_bg.jpg) center center/cover no-repeat;
+  background: url(../icons/menu_meatlovers_bg.jpg) center center/cover no-repeat;
 }
 .menu__item--meatlovers .menu__name {
-  background: url(../../icons/menu_meatlovers.jpg);
+  background: url(../icons/menu_meatlovers.jpg);
 }
 .menu__item--vegetarian {
-  background: url(../../icons/menu_vegetarians_bg.jpg) center center/cover no-repeat;
+  background: url(../icons/menu_vegetarians_bg.jpg) center center/cover no-repeat;
 }
 .menu__item--vegetarian .menu__name {
-  background: url(../../icons/menu_vegetarians.jpg);
+  background: url(../icons/menu_vegetarians.jpg);
 }
 .menu__item--lowcarbs {
-  background: url(../../icons/menu_lowcarbs_bg.jpg) center center/cover no-repeat;
+  background: url(../icons/menu_lowcarbs_bg.jpg) center center/cover no-repeat;
 }
 .menu__item--lowcarbs .menu__name {
-  background: url(../../icons/menu_lowcarbs.jpg);
+  background: url(../icons/menu_lowcarbs.jpg);
 }
 .menu__item--active .menu__description {
   min-width: 25rem;
