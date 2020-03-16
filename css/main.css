@@ -519,7 +519,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .welcome__image {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -696,6 +696,11 @@ button {
 @media screen and (max-width: 768px) {
   .title {
     font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 4rem;
   }
 }
 .title--black {

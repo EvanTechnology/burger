@@ -24,9 +24,10 @@
     justify-content: center;
     background: url(../icons/drops.svg) no-repeat;
 
+    
     @include tablets {
         width: 85%;
-    }
+    };
 }
 .welcome__burger {
     max-width: 100%;
