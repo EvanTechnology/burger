@@ -4,7 +4,11 @@
 }
 .menu__title {
     margin-top: 6.875rem;
-    margin-left: 5.9375rem;
+    margin-left: 10%;
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 .menu__accordeon {
     position: absolute;
@@ -28,19 +32,19 @@
     filter: grayscale(0.75);
     &--meatlovers {
         background: url(../icons/menu_meatlovers_bg.jpg) center center / cover no-repeat;
-        .menu__name {
+        .menu__btn {
             background: url(../icons/menu_meatlovers.jpg);
         }
     };
     &--vegetarian {
         background: url(../icons/menu_vegetarians_bg.jpg) center center / cover no-repeat;
-        .menu__name {
+        .menu__btn {
             background: url(../icons/menu_vegetarians.jpg);
         }
     };
     &--lowcarbs {
         background: url(../icons/menu_lowcarbs_bg.jpg) center center / cover no-repeat;
-        .menu__name {
+        .menu__btn {
             background: url(../icons/menu_lowcarbs.jpg);
         }
     };
@@ -48,17 +52,23 @@
         .menu__description {
             min-width: 25rem;
             padding: 6.25rem 1.25rem;
+
+            @include tablets {
+                min-width: 17rem;
+            };
+            @include phones {
+                min-width: 9rem;
+                width: auto;
+            }
         };
     };
 
 }
 
-.menu__name {
+.menu__btn {
     width: 5rem;
-    writing-mode: vertical-lr;
     font-size: 2.5rem;
     @include gagalin();
-    transform: rotate(180deg);
     padding: 2.1875rem 1.25rem;
     
 }
@@ -66,6 +76,14 @@
     flex: 1;
     width: 0rem;
     overflow: hidden;
+
+}
+.menu__name {
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    width: 100%;
+    height: 100%;
+    text-align: left;
 }
 
 

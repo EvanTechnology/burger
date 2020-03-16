@@ -6,12 +6,21 @@
     &--align--top {
         justify-content: flex-start;
     };
+    
    
 }
 
 .title {
     font-size: 5.5rem;
     color: $yellow;
+
+    @include tablets {
+        font-size: 4.5rem;
+    };
+
+    @include phones {
+        font-size: 4rem;
+    }
     
     @include gagalin();
     &--black {

@@ -434,12 +434,11 @@ p {
   overflow: hidden;
 }
 
-.wrapper:after {
-  content: "";
-  height: 80px;
-  display: block;
-}
-
+/*.wrapper:after {
+    content: "";
+    height:80px;
+    display: block;
+}*/
 .container {
   width: 95%;
   max-width: 960px;
@@ -464,8 +463,20 @@ p {
   margin-right: 0rem;
 }
 .container--contacts {
-  position: relative;
-  max-height: 650px;
+  flex-direction: row;
+  height: 80px;
+  min-height: 80px;
+  /*position: relative;
+  max-height: 650px;*/
+}
+@media screen and (max-width: 480px) {
+  .container--contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 7.1875rem;
+    justify-content: space-evenly;
+  }
 }
 .container--order {
   align-items: center;
@@ -681,6 +692,11 @@ button {
   font-size: 5.5rem;
   color: #f9b436;
   font-family: "Gagalin", Helvetica, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4.5rem;
+  }
 }
 .title--black {
   color: #2f3234;
@@ -903,6 +919,9 @@ button {
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0.625rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 .team__name:before {
   content: "";
@@ -1011,7 +1030,12 @@ button {
 
 .menu__title {
   margin-top: 6.875rem;
-  margin-left: 5.9375rem;
+  margin-left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .menu__title {
+    margin-left: 0;
+  }
 }
 
 .menu__accordeon {
@@ -1040,32 +1064,41 @@ button {
 .menu__item--meatlovers {
   background: url(../icons/menu_meatlovers_bg.jpg) center center/cover no-repeat;
 }
-.menu__item--meatlovers .menu__name {
+.menu__item--meatlovers .menu__btn {
   background: url(../icons/menu_meatlovers.jpg);
 }
 .menu__item--vegetarian {
   background: url(../icons/menu_vegetarians_bg.jpg) center center/cover no-repeat;
 }
-.menu__item--vegetarian .menu__name {
+.menu__item--vegetarian .menu__btn {
   background: url(../icons/menu_vegetarians.jpg);
 }
 .menu__item--lowcarbs {
   background: url(../icons/menu_lowcarbs_bg.jpg) center center/cover no-repeat;
 }
-.menu__item--lowcarbs .menu__name {
+.menu__item--lowcarbs .menu__btn {
   background: url(../icons/menu_lowcarbs.jpg);
 }
 .menu__item--active .menu__description {
   min-width: 25rem;
   padding: 6.25rem 1.25rem;
 }
+@media screen and (max-width: 768px) {
+  .menu__item--active .menu__description {
+    min-width: 17rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu__item--active .menu__description {
+    min-width: 9rem;
+    width: auto;
+  }
+}
 
-.menu__name {
+.menu__btn {
   width: 5rem;
-  writing-mode: vertical-lr;
   font-size: 2.5rem;
   font-family: "Gagalin", Helvetica, sans-serif;
-  transform: rotate(180deg);
   padding: 2.1875rem 1.25rem;
 }
 
@@ -1075,36 +1108,33 @@ button {
   overflow: hidden;
 }
 
+.menu__name {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
 .contacts {
   background-color: #2f3234;
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 .map {
   overflow: hidden;
+  flex-grow: 1;
 }
 
-/*.map__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}*/
+.map__image {
+  width: 100%;
+  height: 100%;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3.75rem;
   background-color: #2f3234;
   display: flex;
-}
-@media screen and (max-width: 480px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 7.1875rem;
-    justify-content: space-evenly;
-  }
 }
 
 .contacts__details {
