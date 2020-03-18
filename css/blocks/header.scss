@@ -7,9 +7,11 @@ $itemsMargin: 0.625rem;
     font-size: 0.8125rem;
     font-weight: 500;
     align-items: center;
+    margin-right: 10%;
 }
 .logo {
     width: 6.25rem ;
+    z-index: 100;
 }
 .logo__image {
     width: 6.25rem;
@@ -17,6 +19,12 @@ $itemsMargin: 0.625rem;
 }
 .header-menu {
     margin-left: auto;
+
+    @include tablets {
+        /*display: none;*/
+        flex: 1;
+        margin-left: 0;
+    }
 }
 
 .header-menu__list {
@@ -26,26 +34,51 @@ $itemsMargin: 0.625rem;
 
     @include tablets {
         display: none;
+        /*display: flex;*/
+        flex-direction: column;
+        background-color: $black;
+        opacity: 0.9;
+        position: fixed;
+        top: 0rem;
+        bottom: 0rem;
+        left: 0;
+        right: -5%;
+        justify-content: center;
+        z-index: 90;
+        &.active {
+            display: flex;
+        }
     }
 }
 .header-menu__item {
     display: flex;
     align-items: center;
     margin-left: $itemsMargin;
+
+    @include tablets {
+        font-size: 24px;
+        flex-direction: column;
+        margin-bottom: 1.875rem;
+    }
 }
 .header-menu__item:after {
     content: "";
     display: block;
-    height: 0.3125rem;
-    width: 0.3125rem;
+    height: 5px;
+    width: 5px;
     border-radius: 50%;
     margin-left: 0.625rem;
     background-color: #ffffff;
+
+    @include tablets {
+        margin-top: 1.875rem;
+
+    }
 }
 .header-menu :last-child:after {
     display: none;
 }
-.hamburger__menu {
+/*.hamburger__menu {
     margin-left: 1.25rem;
     transition: 0.5s;
     display: none;
@@ -61,4 +94,4 @@ $itemsMargin: 0.625rem;
     margin-bottom: 5px;
     border-radius: 2px;
 
-}
+}*/
