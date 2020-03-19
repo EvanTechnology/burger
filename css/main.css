@@ -482,6 +482,10 @@ p {
   align-items: center;
   justify-content: center;
 }
+.container--burgers {
+  flex-direction: row;
+  align-items: center;
+}
 
 button {
   border: none;
@@ -1455,4 +1459,65 @@ button {
 }
 .hamburger__item::after {
   bottom: 0;
+}
+
+.burgers {
+  background: linear-gradient(#f9b43b, #eb8c38, #f9b43b);
+}
+
+.control__arrow--left {
+  transform: rotate(90deg);
+}
+.control__arrow--right {
+  transform: rotate(270deg);
+}
+
+.burgers__list {
+  flex: 1;
+}
+
+.burgers__content {
+  display: flex;
+}
+
+.burgers__image {
+  width: 50%;
+}
+
+.burgers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.burgers__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.burgers__name {
+  margin: 50px 0;
+}
+
+.burgers__text {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.burgers__price {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-family: "Gagalin", Helvetica, sans-serif;
+  font-size: 50px;
+  padding-bottom: 10px;
+  margin-right: 40px;
+  color: #e35028;
 }
