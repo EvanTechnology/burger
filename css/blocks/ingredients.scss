@@ -1,0 +1,98 @@
+.ingredients__container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 6.25rem;
+    width: 65%;
+    padding: 1.25rem 0px;
+    background: $white;
+    border-radius: 5px;
+    @include ubuntu(medium);
+    opacity: 0.8;
+
+    &.active {
+        display: flex;
+        z-index: 10;
+    }
+    @include phones {
+        left: 4.375rem;
+        width: 80%;
+    }
+}
+
+.ingredients__list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ingredients__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 5px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.ingredients__image {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0 1.25rem;
+}
+
+.ingredients__quantity {
+    margin-left: auto;
+    margin-right: 1.25rem;
+
+    @include tablets {
+        margin-right: 20%;
+    }
+}
+
+.ingredients__menu {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border: none;
+    height: 1.5625rem;
+    background-color: transparent;
+    display: none;
+
+    @include tablets {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+.ingredients__menu-item {
+    display: block;
+    &,
+    &::before,
+    &::after {
+        background-color: $red;
+        width: 25px;
+        height: 4px;
+        border-radius: 3px;
+        transition: 0.5s;
+    }
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+    }
+    &::before {
+        transform: rotate(-45deg);
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+    & {
+        height: 0;
+    }
+}
