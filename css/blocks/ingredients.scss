@@ -53,22 +53,26 @@
     }
 }
 
-.ingredients__menu {
+.menu-close-btn {
     position: absolute;
     top: 0%;
     right: 0%;
     border: none;
     height: 1.5625rem;
     background-color: transparent;
-    display: none;
 
     @include tablets {
-        display: flex;
         cursor: pointer;
     }
 }
+.ingredients__menu {
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
 
-.ingredients__menu-item {
+.menu-close-btn__item {
     display: block;
     &,
     &::before,

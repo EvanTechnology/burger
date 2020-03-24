@@ -4,22 +4,29 @@ function openreview() {
     const reviewBlock = document.querySelector('.reviews__list');
 
     const modal = document.createElement('div');
+    const modalBlock = document.createElement('div');
     const modalName = document.createElement('h3');
     const modalText = document.createElement('p');
     const modalBtn = document.createElement('button');
+    const modalBtnElement = document.createElement('span');
+
 
     modal.classList.add('modal');
+    modalBlock.classList.add('modal__block');
     modalName.classList.add('modal__name');
     modalText.classList.add('modal__text');
-    modalBtn.classList.add('modal__btn');
-    modalBtn.classList.add('btn');
+    modalBtnElement.classList.add('menu-close-btn__item');
+    modalBtn.classList.add('menu-close-btn');
+    /*modalBtn.classList.add('btn');
     modalBtn.classList.add('btn--black');
 
-    modalBtn.textContent = "Back";
+    modalBtn.textContent = "Back";*/
 
-    modal.appendChild(modalName);
-    modal.appendChild(modalText);
-    modal.appendChild(modalBtn);
+    modal.appendChild(modalBlock);
+    modalBlock.appendChild(modalName);
+    modalBlock.appendChild(modalText);
+    modalBlock.appendChild(modalBtn);
+    modalBtn.appendChild(modalBtnElement);
 
 
     reviewBlock.addEventListener('click', function(e) {
