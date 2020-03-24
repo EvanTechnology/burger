@@ -64,9 +64,6 @@ p {
         justify-content: center;
     };
     &--reviews {
-        /*max-height: 650px;*/
-        /*-height: fit-content;
-        min-height: 0;*/
         width: 100%;
     };
     &--menu {
@@ -85,8 +82,6 @@ p {
             height: 7.1875rem;
             justify-content: space-evenly;
         };
-        /*position: relative;
-        max-height: 650px;*/
     };
     &--order {
         align-items: center;
@@ -100,4 +95,5 @@ p {
 button {
     border: none;
     color: inherit;
+    outline: none;
 }

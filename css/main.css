@@ -453,9 +453,6 @@ p {
   justify-content: center;
 }
 .container--reviews {
-  /*max-height: 650px;*/
-  /*-height: fit-content;
-  min-height: 0;*/
   width: 100%;
 }
 .container--menu {
@@ -466,8 +463,6 @@ p {
   flex-direction: row;
   height: 80px;
   min-height: 80px;
-  /*position: relative;
-  max-height: 650px;*/
 }
 @media screen and (max-width: 480px) {
   .container--contacts {
@@ -490,6 +485,7 @@ p {
 button {
   border: none;
   color: inherit;
+  outline: none;
 }
 
 .welcome {
@@ -944,7 +940,7 @@ button {
 
 .modal {
   background-color: #2f3234;
-  opacity: 0.85;
+  opacity: 0.9;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -957,6 +953,7 @@ button {
 .modal__block {
   position: relative;
   color: #2f3234;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1159,7 +1156,6 @@ button {
 .menu__item {
   display: flex;
   height: 100%;
-  filter: grayscale(0.75);
 }
 .menu__item--meatlovers {
   background: url(../icons/menu_meatlovers_bg.jpg) center center/cover no-repeat;
@@ -1179,7 +1175,12 @@ button {
 .menu__item--lowcarbs .menu__btn {
   background: url(../icons/menu_lowcarbs.jpg);
 }
+.menu__item--active .menu__name {
+  color: #f9b436;
+}
 .menu__item--active .menu__description {
+  background-color: #2f3234;
+  opacity: 0.8;
   min-width: 25rem;
   padding: 6.25rem 1.25rem;
 }
