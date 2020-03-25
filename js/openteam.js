@@ -3,8 +3,7 @@ function openteam() {
     const team = document.querySelector('.team__list');
     const member = document.querySelectorAll('.team__name');
 
-    console.log(team);
-    console.log(member);
+    
 
     team.addEventListener('click', function(e) {
 
@@ -20,7 +19,7 @@ function openteam() {
         }
 
         e.target.parentNode.classList.add('team__item--active');
-        console.log(e.target.parentNode);
+        
         
     };
 
