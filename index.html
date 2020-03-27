@@ -776,11 +776,12 @@
                         <div class="order__row">
                             <label class="order__block">
                                 <div class="order__title">First Name</div>
-                                <input type="text" class="order__input">
+                                <input type="text" class="order__input" name="name" required>
+                                <div class="error"></div>
                             </label>
                             <label class="order__block">
                                 <div class="order__title">Phone number</div>
-                                <input type="text" class="order__input">
+                                <input type="text" class="order__input" name="phone" required>
                             </label>
                         </div>
                         <div class="order__row">
@@ -813,7 +814,7 @@
                         <div class="order__row">
                             <label class="order__block">
                                 <div class="order__title">Comments</div>
-                                <textarea class="order__input order__input--comments"></textarea>
+                                <textarea class="order__input order__input--comments" name="comments" required></textarea>
                             </label>
                         </div>
                         <div class="order__row order__row--radio">
@@ -837,7 +838,7 @@
 
                         </div>
                         <div class="order__row">
-                            <button type="submit" class="btn">Submit</button>
+                            <button type="submit" class="btn" id="submitOrder">Submit</button>
                             <button type="reset" class="btn btn--reset">Reset</button>
 
                         </div>
@@ -909,6 +910,7 @@
     <script src="js/openmenu.js"></script>
     <script src="js/openteam.js"></script>
     <script src="js/burgersslider.js"></script>
+    <script src="js/orderform.js"></script>
 
 </body>
 
