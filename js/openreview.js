@@ -34,7 +34,6 @@ function openreview() {
 
         if (e.target.classList.contains('btn--black')) {
 
-            console.log("cnalknc");
             page.appendChild(modal);
             modalName.textContent = 
             e.target.parentNode.querySelector('.review__name').textContent;
@@ -45,7 +44,6 @@ function openreview() {
 
     modalBtn.addEventListener('click', function(e) {
         page.removeChild(modal);
-        console.log('DONE')
     });
    
 }
