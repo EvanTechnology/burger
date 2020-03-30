@@ -1,0 +1,134 @@
+.team {
+    position: relative;
+    background: url(../images/team_bg.jpg) center center / cover no-repeat;
+}
+
+.team__container {
+    width: 50%;
+    height: 100%;
+    background: url(../images/team_grey_bg.png) center center / cover no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    @include tablets {
+        width: 100%;
+        left: 0%;
+    };
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    };
+}
+
+.team__title {
+    padding-top: 6.25rem;
+    padding-left: 5%;
+    margin-bottom: 2.25rem;
+}
+
+.team__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    padding-left: 7%;
+}
+
+.team__name {
+    @include gagalin();
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.625rem;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        margin-right: 0.625rem;
+        width: 0rem;
+        height: 0rem;
+        border: 0.5rem solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: 0rem;
+    }
+}
+
+.profile {
+    display: flex;
+    padding: 0rem 2.1875rem;
+    margin-bottom: 1.5625rem;
+    justify-content: flex-start;
+    height: 0;
+    overflow: hidden;
+    max-width: 28.125rem;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+.profile__image {
+    width: 7.1875rem;
+    height: 7.1875rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0.9375rem 1.25rem;
+    flex-shrink: 0;
+}
+
+.profile__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__content {
+    flex: 1;
+    line-height: 1.5rem;
+}
+
+.profile__position {
+    @include ubuntu(bold);
+    margin-bottom: 0.9375rem;
+}
+
+.profile__description {
+    @include ubuntu(light);
+    margin-bottom: 0.9375rem;
+}
+
+.team__item--active {
+    .team__name {
+        color: $yellow;
+
+        &:before {
+            border-top-width: 0rem;
+            border-bottom-color: $yellow;
+            border-bottom-width: 0.5rem;
+        }
+    }
+
+    ;
+
+    .profile {
+        height: auto;
+        overflow: hidden;
+    }
+
+
+
+}
