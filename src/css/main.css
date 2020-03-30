@@ -519,7 +519,7 @@ button {
   width: 50%;
   display: flex;
   justify-content: center;
-  background: url(../images/drops.svg) no-repeat;
+  background: url(../images/icons/drops.svg) no-repeat;
 }
 @media screen and (max-width: 768px) {
   .welcome__image {
