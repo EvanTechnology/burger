@@ -493,7 +493,7 @@ button {
 }
 
 .welcome {
-  background: url(../icons/video-bg.png) center center/cover no-repeat;
+  background: url(../images/video-bg.png) center center/cover no-repeat;
   border: 1px solid #ffffff;
   height: 100%;
   justify-content: space-between;
@@ -519,7 +519,7 @@ button {
   width: 50%;
   display: flex;
   justify-content: center;
-  background: url(../icons/drops.svg) no-repeat;
+  background: url(../images/drops.svg) no-repeat;
 }
 @media screen and (max-width: 768px) {
   .welcome__image {
@@ -602,7 +602,7 @@ button {
 }
 
 .we {
-  background: url(../icons/we_bg.png) center center/cover no-repeat;
+  background: url(../images/we_bg.png) center center/cover no-repeat;
 }
 
 .we__title {
@@ -743,7 +743,6 @@ button {
 }
 @media screen and (max-width: 768px) {
   .header-menu {
-    /*display: none;*/
     flex: 1;
     margin-left: 0;
   }
@@ -757,7 +756,6 @@ button {
 @media screen and (max-width: 768px) {
   .header-menu__list {
     display: none;
-    /*display: flex;*/
     flex-direction: column;
     background-color: #2f3234;
     opacity: 0.9;
@@ -806,27 +804,9 @@ button {
   display: none;
 }
 
-/*.hamburger__menu {
-    margin-left: 1.25rem;
-    transition: 0.5s;
-    display: none;
-
-    @include tablets {
-        display: initial;
-    };
-}
-.hamburger__line {
-    width: 2.1875rem;
-    height: 0.3125rem;
-    background-color: $white;
-    margin-bottom: 5px;
-    border-radius: 2px;
-
-}*/
 .reviews {
   background-color: #2f3234;
   position: relative;
-  /*min-height: fit-content;*/
 }
 
 .reviews__list {
@@ -970,13 +950,13 @@ button {
 
 .team {
   position: relative;
-  background: url(../icons/team_bg.jpg) center center/cover no-repeat;
+  background: url(../images/team_bg.jpg) center center/cover no-repeat;
 }
 
 .team__container {
   width: 50%;
   height: 100%;
-  background: url(../icons/team_grey_bg.png) center center/cover no-repeat;
+  background: url(../images/team_grey_bg.png) center center/cover no-repeat;
   position: absolute;
   top: 0%;
   left: 50%;
@@ -1127,7 +1107,7 @@ button {
 
 .menu {
   position: relative;
-  background: url(../icons/menu_bg.jpg) center center/cover no-repeat;
+  background: url(../images/menu_bg.jpg) center center/cover no-repeat;
 }
 
 .menu__title {
@@ -1169,22 +1149,22 @@ button {
   height: 100%;
 }
 .menu__item--meatlovers {
-  background: url(../icons/menu_meatlovers_bg.jpg) center center/cover no-repeat;
+  background: url(../images/menu_meatlovers_bg.jpg) center center/cover no-repeat;
 }
 .menu__item--meatlovers .menu__btn {
-  background: url(../icons/menu_meatlovers.jpg);
+  background: url(../images/menu_meatlovers.jpg);
 }
 .menu__item--vegetarian {
-  background: url(../icons/menu_vegetarians_bg.jpg) center center/cover no-repeat;
+  background: url(../images/menu_vegetarians_bg.jpg) center center/cover no-repeat;
 }
 .menu__item--vegetarian .menu__btn {
-  background: url(../icons/menu_vegetarians.jpg);
+  background: url(../images/menu_vegetarians.jpg);
 }
 .menu__item--lowcarbs {
-  background: url(../icons/menu_lowcarbs_bg.jpg) center center/cover no-repeat;
+  background: url(../images/menu_lowcarbs_bg.jpg) center center/cover no-repeat;
 }
 .menu__item--lowcarbs .menu__btn {
-  background: url(../icons/menu_lowcarbs.jpg);
+  background: url(../images/menu_lowcarbs.jpg);
 }
 .menu__item--active .menu__name {
   color: #f9b436;
@@ -1237,8 +1217,6 @@ button {
 
 .contacts {
   background-color: #2f3234;
-  /*display: flex;
-  flex-direction: column;*/
 }
 
 .map {
@@ -1291,7 +1269,7 @@ button {
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
-  background: url(../icons/phone.svg) center center/cover no-repeat;
+  background: url(../images/icons/phone.svg) center center/cover no-repeat;
   margin-right: 0.9375rem;
 }
 
@@ -1324,7 +1302,7 @@ button {
 }
 
 .order {
-  background: url(../icons/order_bg.jpg) center center/cover no-repeat;
+  background: url(../images/order_bg.jpg) center center/cover no-repeat;
 }
 
 .order__form {
@@ -1475,7 +1453,6 @@ button {
   position: absolute;
   width: 0.625rem;
   height: 0.625rem;
-  /*background: url(../../icons/checkmark.png);*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1483,7 +1460,7 @@ button {
 }
 
 .checkbox__input:checked + .checkbox__point:before {
-  background: url(../../icons/checkmark.png);
+  background: url(../../images/checkmark.png);
 }
 
 .response {
@@ -1651,7 +1628,7 @@ button {
   height: 3.125rem;
   margin: 0 auto;
   margin-bottom: 0.625rem;
-  background: url(../icons/burger.svg) center center/cover no-repeat;
+  background: url(../images/icons/burger.svg) center center/cover no-repeat;
 }
 @media screen and (max-width: 480px) {
   .burgers__ingredients:before {
@@ -1689,7 +1666,7 @@ button {
   content: "";
   display: block;
   width: 50%;
-  background: url(../icons/kkal.svg) center center/cover no-repeat;
+  background: url(../images/icons/kkal.svg) center center/cover no-repeat;
   position: absolute;
   top: 0;
   left: 50%;
