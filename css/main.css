@@ -488,6 +488,10 @@ button {
   outline: none;
 }
 
+.blocked {
+  overflow: hidden;
+}
+
 .welcome {
   background: url(../icons/video-bg.png) center center/cover no-repeat;
   border: 1px solid #ffffff;
@@ -1153,6 +1157,12 @@ button {
   right: 0;
   height: 100%;
 }
+@media screen and (max-width: 480px) {
+  .menu__list {
+    width: 100%;
+    position: absolute;
+  }
+}
 
 .menu__item {
   display: flex;
@@ -1194,6 +1204,13 @@ button {
   .menu__item--active .menu__description {
     min-width: 9rem;
     width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu__item--active {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
   }
 }
 

@@ -1,6 +1,7 @@
 function orderform() {
     const form = document.querySelector('.order__form');
     const sendBtn = document.querySelector('#submitOrder');
+    const mainbody = document.querySelector('body');
 
     const modal = document.createElement('div');
     const modalText = document.createElement('p');
@@ -43,6 +44,7 @@ function orderform() {
                 modalText.innerText = "Oops... something goes wrong. Please, repeat."
             }
             form.appendChild(modal);
+            mainbody.classList.add('blocked');
         });
         
         }
@@ -50,6 +52,7 @@ function orderform() {
     modal.addEventListener('click', e=> {
         if (e.target.classList.contains('menu-close-btn__item')) {
            form.removeChild(modal);
+           mainbody.classList.remove('blocked');
         }
     });
     

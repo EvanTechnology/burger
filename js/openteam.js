@@ -2,7 +2,7 @@ function openteam() {
 
     const team = document.querySelector('.team__list');
     const member = document.querySelectorAll('.team__name');
-
+    
     
 
     team.addEventListener('click', function(e) {

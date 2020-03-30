@@ -1,11 +1,13 @@
 function openmainmenu() {
     const menubtn = document.querySelector('.hamburger__menu');
     const menublock = document.querySelector('.header-menu__list');
+    const mainbody = document.querySelector('body');
 
     menubtn.addEventListener('click', function() {
 
         menubtn.classList.toggle('closed');
         menublock.classList.toggle('active');
+        mainbody.classList.toggle('blocked');
 
         
     });
@@ -16,6 +18,7 @@ function openmainmenu() {
         
         menubtn.classList.toggle('closed');
         menublock.classList.toggle('active');
+        mainbody.classList.toggle('blocked');
         };
 
     });
