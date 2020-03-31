@@ -9,7 +9,7 @@ function openreview() {
     const modalText = document.createElement('p');
     const modalBtn = document.createElement('button');
     const modalBtnElement = document.createElement('span');
-
+    const mainbody = document.querySelector('body');
 
     modal.classList.add('modal');
     modalBlock.classList.add('modal__block');
@@ -17,10 +17,7 @@ function openreview() {
     modalText.classList.add('modal__text');
     modalBtnElement.classList.add('menu-close-btn__item');
     modalBtn.classList.add('menu-close-btn');
-    /*modalBtn.classList.add('btn');
-    modalBtn.classList.add('btn--black');
-
-    modalBtn.textContent = "Back";*/
+   
 
     modal.appendChild(modalBlock);
     modalBlock.appendChild(modalName);
@@ -35,6 +32,7 @@ function openreview() {
         if (e.target.classList.contains('btn--black')) {
 
             page.appendChild(modal);
+            mainbody.classList.toggle('blocked');
             modalName.textContent = 
             e.target.parentNode.querySelector('.review__name').textContent;
             modalText.textContent = 
@@ -44,6 +42,7 @@ function openreview() {
 
     modalBtn.addEventListener('click', function(e) {
         page.removeChild(modal);
+        mainbody.classList.toggle('blocked');
     });
    
 }

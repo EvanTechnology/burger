@@ -9,7 +9,11 @@
 
     @include tablets {
         margin-left: 0;
-    }
+    };
+
+    @include phones {
+        padding-left: 2.5rem;
+    };
 }
 
 .menu__accordeon {

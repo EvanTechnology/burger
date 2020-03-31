@@ -459,6 +459,11 @@ p {
   position: relative;
   margin-right: 0rem;
 }
+@media screen and (max-width: 480px) {
+  .container--menu {
+    width: 100%;
+  }
+}
 .container--contacts {
   flex-direction: row;
   height: 80px;
@@ -1117,6 +1122,11 @@ button {
 @media screen and (max-width: 768px) {
   .menu__title {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu__title {
+    padding-left: 2.5rem;
   }
 }
 
