@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css">
     <title>Burgers</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="fullpage">
         <ul class="pagination">
             <li class="pagination__item pagination__item--active">
                 <a href="#welcome" class="pagination__link">
@@ -110,7 +111,7 @@
                         <div class="welcome__description">real burgers</div>
                     </div>
                 </div>
-                <div class="control">
+                <div class="control page-control">
                     <a href="#burgers" class="control__arrow">
                         <img src="images/arrow-scroll.png" alt="" class="control__scroll">
                     </a>
@@ -196,7 +197,14 @@
                                     </div>
                                     <div class="burgers__price">
                                         <span class="price">AU$ 10</span>
-                                        <button type="button" class=" burgers__btn btn">order</button>
+                                        <div class="order__btn">
+                                            <a href="#order" class="btn">
+                                                Order
+                                            </a>
+                    
+                                        </div>
+
+                                        <!-- <button type="button" class=" burgers__btn btn">order</button> -->
                                     </div>
 
                                 </div>
@@ -269,7 +277,13 @@
                                     </div>
                                     <div class="burgers__price">
                                         <span class="price">AU$ 15</span>
-                                        <button type="button" class=" burgers__btn btn">order</button>
+                                        <div class="order__btn">
+                                            <a href="#order" class="btn">
+                                                Order
+                                            </a>
+                    
+                                        </div>
+                                        <!-- <button type="button" class=" burgers__btn btn">order</button> -->
                                     </div>
 
                                 </div>
@@ -344,7 +358,13 @@
                                     </div>
                                     <div class="burgers__price">
                                         <span class="price">AU$ 12</span>
-                                        <button type="button" class=" burgers__btn btn">order</button>
+                                        <div class="order__btn">
+                                            <a href="#order" class="btn">
+                                                Order
+                                            </a>
+                    
+                                        </div>
+                                        <!-- <button type="button" class=" burgers__btn btn">order</button> -->
                                     </div>
 
                                 </div>
@@ -807,7 +827,7 @@
             </div>
         </section>
 
-        <section class="section contacts" id="contancts">
+        <section class="section contacts" id="contacts">
 
             <div class="map">
                 <img src="images/map.jpg" alt="Map" class="map__image">
@@ -868,7 +888,8 @@
     <script src="js/orderform.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/navigation.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+    <script src="js/fullpage.js"></script>
 </body>
 
 </html>

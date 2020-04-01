@@ -1,31 +1,76 @@
 $ (function(){
 
+    const pagination = $(('.pagination'), $('.wrapper')),
+        dots = pagination.find('.pagination__item'),
+        activeDot = dots.filter('.pagination__item--active');
+
+    function dotIndication(activeDot, requiredDot) {
+        activeDot.removeClass('pagination__item--active');
+        requiredDot.classList.add('pagination__item--active');
+
+    };
+
     $('.header-menu__link').on('click', function(e) {
 
         const menu = $(('.header-menu__list'), $('.wrapper')),
             requiredSection = $(e.currentTarget.parentNode),
             requiredSectionIndex = requiredSection.index(),
 
-            pagination = $(('.pagination'), $('.wrapper')),
-            dots = pagination.find('.pagination__item'),
-            activeDot = dots.filter('.pagination__item--active'),
             activeDotIndex = 0,
             requiredDotIndex = requiredSectionIndex,
             requiredDot = dots[requiredDotIndex];
-            
            
-
-        activeDot.removeClass('pagination__item--active');
-        requiredDot.classList.add('pagination__item--active');
+        dotIndication(activeDot, requiredDot);
     });
-    $('.control__scroll').on('click', function(e) {
-        const pagination = $(('.pagination__item'), $('.wrapper')),
+
+    $('.page-control').on('click', function(e) {
+
+        const 
+            activeDotIndex = 0,
             requiredDotIndex = 1,
             requiredDot = dots[requiredDotIndex];
-
-        activeDot.removeClass('pagination__item--active');
-        requiredDot.classList.add('pagination__item--active');
-
-        console.log(pagination);
+        
+        dotIndication(activeDot, requiredDot);
     });
+
+    $('.header__btn').on('click', function(e) {
+
+        const 
+            activeDotIndex = 0,
+            requiredDotIndex = 6,
+            requiredDot = dots[requiredDotIndex];
+       
+        dotIndication(activeDot, requiredDot);
+    });
+
+    $('.order__btn').on('click', function(e) {
+
+        const 
+        
+            activeDotIndex = 1,
+            requiredDotIndex = 6,
+            requiredDot = dots[requiredDotIndex];
+    
+        dotIndication(activeDot, requiredDot);
+    });
+
+    const fullpage = $('.section', $('.wrapper'));
+    console.log(fullpage);
+
+    $('.section').on('wheel', function(e) {
+       console.log('jksdbkj');
+       const activeSection = $(e.currentTarget);
+       console.log(activeSection);
+       //activeSection.scroll;
+        
+       
+        
+    //    console.log(direction);
+    //     if (e.deltaY > 0) {
+    //         console.log("more");
+    //     //     $('.section').scrolltop(300);
+    //     // }
+    //     }
+    });
+
 });
