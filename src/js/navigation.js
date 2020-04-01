@@ -57,10 +57,19 @@ $ (function(){
     const fullpage = $('.section', $('.wrapper'));
     console.log(fullpage);
 
+    //let coordY = 1;
+
     $('.section').on('wheel', function(e) {
        console.log('jksdbkj');
        const activeSection = $(e.currentTarget);
        console.log(activeSection);
+       const direction = e.originalEvent.deltaY;
+       console.log(direction);
+
+       //console.log(e.pageY);
+       //const differenceY = coordy - e.pageY;
+       //console.log(differenceY);
+       //activeSection.slideUp();
        //activeSection.scroll;
         
        

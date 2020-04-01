@@ -479,6 +479,10 @@ p {
     justify-content: space-evenly;
   }
 }
+.container--work {
+  align-items: center;
+  justify-content: center;
+}
 .container--order {
   align-items: center;
   justify-content: center;
@@ -529,7 +533,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .welcome__image {
-    width: 85%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .welcome__image {
+    width: 75%;
   }
 }
 
@@ -1610,6 +1619,12 @@ button {
   height: 80%;
   object-fit: contain;
 }
+@media screen and (max-width: 768px) {
+  .burgers__photo {
+    width: 65%;
+    height: 65%;
+  }
+}
 
 .burgers__nutrition,
 .burgers__ingredients {
@@ -1834,4 +1849,14 @@ button {
 }
 .menu-close-btn__item {
   height: 0;
+}
+
+.work {
+  background: url(/images/work_bg.jpg) center center/cover no-repeat;
+}
+
+.video {
+  max-width: 660px;
+  max-height: 400px;
+  width: 95%;
 }

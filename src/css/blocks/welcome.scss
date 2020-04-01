@@ -25,7 +25,10 @@
 
     
     @include tablets {
-        width: 85%;
+        width: 55%;
+    };
+    @include phones {
+        width: 75%;
     };
 }
 .welcome__burger {

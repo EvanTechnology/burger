@@ -61,6 +61,11 @@
     width: 80%;
     height: 80%;
     object-fit: contain;
+
+    @include tablets {
+        width: 65%;
+        height: 65%;
+    }
 }
 
 .burgers__nutrition,
