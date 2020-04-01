@@ -12,42 +12,42 @@
     <div class="wrapper">
         <ul class="pagination">
             <li class="pagination__item pagination__item--active">
-                <a href="#" class="pagination__link">
+                <a href="#welcome" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#burgers" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#we" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#team" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#menu" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#reviews" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#order" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#" class="pagination__link">
+                <a href="#contacts" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
@@ -59,7 +59,7 @@
             </button>
         </div>
 
-        <section class="section welcome active">
+        <section class="section welcome active" id="welcome">
             <div class="container">
                 <header class="header">
                     <div class="logo">
@@ -70,41 +70,34 @@
                     <nav class="header-menu">
                         <ul class="header-menu__list">
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">About Us</a>
+                                <a href="#we" class="header-menu__link">About Us</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Burgers</a>
+                                <a href="#burgers" class="header-menu__link">Burgers</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Team</a>
+                                <a href="#team" class="header-menu__link">Team</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Menu</a>
+                                <a href="#menu" class="header-menu__link">Menu</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Reviews</a>
+                                <a href="#reviews" class="header-menu__link">Reviews</a>
                             </li>
                             <li class="header-menu__item">
                                 <a href="#" class="header-menu__link">How We Do</a>
                             </li>
                             <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Contacts</a>
+                                <a href="#contacts" class="header-menu__link">Contacts</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="header__btn">
-                        <a href="#" class="btn">
+                        <a href="#order" class="btn">
                             Order
                         </a>
 
                     </div>
-                    <!-- <div class="hamburger__menu">
-                        <div class="hamburger__line"></div>
-                        <div class="hamburger__line"></div>
-                        <div class="hamburger__line"></div>
-
-                        
-                    </div> -->
 
                 </header>
                 <div class="welcome__content">
@@ -118,14 +111,14 @@
                     </div>
                 </div>
                 <div class="control">
-                    <a href="#" class="control__arrow">
+                    <a href="#burgers" class="control__arrow">
                         <img src="images/arrow-scroll.png" alt="" class="control__scroll">
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="section section--align--top burgers">
+        <section class="section section--align--top burgers" id="burgers">
             <div class="container container--burgers">
                 <div class="control">
                     <a href="#" class="control__arrow control__arrow--left">
@@ -370,7 +363,7 @@
             </div>
         </section>
 
-        <section class="section section--align--top we">
+        <section class="section section--align--top we" id="we">
             <div class="container container--we">
                 <h2 class="title we__title title--black">
                     We are the best
@@ -420,7 +413,7 @@
             </div>
         </section>
 
-        <section class="section team">
+        <section class="section team" id="team">
 
             <div class="team__container">
                 <div class="team__content">
@@ -491,7 +484,7 @@
 
         </section>
 
-        <section class="section menu">
+        <section class="section menu" id="menu">
             <div class="container container--menu">
                 <h2 class="title title--white menu__title">Menu</h2>
                 <ul class="menu__list">
@@ -532,7 +525,7 @@
             </div>
         </section>
 
-        <section class="section section--align--top reviews">
+        <section class="section section--align--top reviews" id="reviews">
 
             <ul class="reviews__list">
                 <li class="reviews__item review">
@@ -735,7 +728,7 @@
 
         </section>
 
-        <section class="section order">
+        <section class="section order" id="order">
             <div class="container container--order">
                 <h2 class="title title--order">Delivery</h2>
                 <form class="order__form">
@@ -814,7 +807,7 @@
             </div>
         </section>
 
-        <section class="section contacts">
+        <section class="section contacts" id="contancts">
 
             <div class="map">
                 <img src="images/map.jpg" alt="Map" class="map__image">
@@ -873,7 +866,8 @@
     <script src="js/openteam.js"></script>
     <script src="js/burgersslider.js"></script>
     <script src="js/orderform.js"></script>
-    <script src="js/pagescroll.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/navigation.js"></script>
 
 </body>
 

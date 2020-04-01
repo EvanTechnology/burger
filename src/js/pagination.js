@@ -1,7 +1,7 @@
 $ (function() {
 
     $('.pagination__link').on('click', function(e) {
-        e.preventDefault();
+        //e.preventDefault();
 
         const $this = $(this),
             container = $this.closest('.wrapper'),
@@ -17,21 +17,19 @@ $ (function() {
             requiredDot = $(e.currentTarget.parentNode),
             requiredDotIndex = requiredDot.index();
 
-            console.log(pages);
-            console.log(activePage);
-            console.log(dots);
-            console.log(activeDot);
-            console.log(requiredDotIndex);
+  
         
-        
-            container.animate( {
-            'top' : - requiredDotIndex * 100 + '%'
-        }, duration, function() {
-            activePage.removeClass('active');
             activeDot.removeClass('pagination__item--active');
-            requiredPage.addClass('active');
             requiredDot.addClass('pagination__item--active');
-        });
+        
+        //     container.animate( {
+        //     'top' : - requiredDotIndex * 100 + '%'
+        // }, duration, function() {
+        //     activePage.removeClass('active');
+        //     activeDot.removeClass('pagination__item--active');
+        //     requiredPage.addClass('active');
+        //     requiredDot.addClass('pagination__item--active');
+        //});
         
     });
 });
