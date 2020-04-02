@@ -25,6 +25,8 @@
     @include gagalin();
     &--black {
         color: $black;
+        padding-top: 3.125rem;
+        margin-bottom: 1.875rem;
     };
     &--white {
         color: $white;
