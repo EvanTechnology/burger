@@ -3,6 +3,7 @@ const playerContainer = $('.player');
 
 
 let eventsInit = () => {
+    //play btn switch
     $('.player__start').click(e => {
         e.preventDefault();
 
@@ -16,11 +17,24 @@ let eventsInit = () => {
             player.playVideo();
         }
     });
-};
+    //mute btn switch
+    $('.player__mute').click(e => {
+        e.preventDefault();
+        const muteBtn = $(e.currentTarget);
 
+        if(muteBtn.hasClass('player__mute--soundoff')) {
+            muteBtn.removeClass('player__mute--soundoff');
+            player.unMute();
+        } else {
+            muteBtn.addClass('player__mute--soundoff');
+            player.mute();
+        }
+    });
+};
+//playback control
 $('.player__playback').click(e => {
-    const bar = $(e.currentTarget);
-    const clickedPosition = e.originalEvent.layerX;
+    const bar = $(e.currentTarget); //get the line
+    const clickedPosition = e.originalEvent.layerX; //get the coords of poiner
     const newBtnPositionPercent = (clickedPosition/bar.width())*100;
     const newPlaybackPositionSec = (player.getDuration()/100) * newBtnPositionPercent;
     $('.player__playback-btn').css({
@@ -34,7 +48,20 @@ $('.player__splash').click(e => {
     player.playVideo();
 });
 
-const formatTime = timeSec => {
+// volume control 
+
+$('.player__volume-scale').click(e => {
+    const line = $(e.currentTarget); //get the scale's line
+    const clickedPosition = e.originalEvent.layerX; //get the coords of poiner
+    const newBtnPositionPercent = (clickedPosition/line.width())*100;
+    $('.player__volume-btn').css( {
+        left: newBtnPositionPercent+'%'
+    })
+    player.setVolume(newBtnPositionPercent);
+});
+
+
+const formatTime = timeSec => {   //there's no need of it but it's used in next function
     const roundTime = Math.round(timeSec);
     const minutes = addZero(Math.floor(roundTime / 60));
     const seconds = addZero(roundTime - minutes * 60);
@@ -46,15 +73,16 @@ const formatTime = timeSec => {
 };
 
  const onPlayerReady = () => {
+    const volume = player.getVolume();
+    $('.player__volume-btn').css( {
+        left: volume+'%'
+    });
      let interval;
      const durationSec = player.getDuration();
-     console.log(durationSec);
      $('.player__duration-estimated').text(formatTime(durationSec));
-     console.log(interval);
      if(typeof interval !=='undefined') {
          clearInterval(interval);
      };
-     console.log(interval);
      interval = setInterval(() => {
          const completedSec = player.getCurrentTime();
          const completedPercent = (completedSec/durationSec) * 100;
@@ -62,8 +90,16 @@ const formatTime = timeSec => {
              left: completedPercent +'%'
              
          });
-         console.log(completedPercent);
-         $('.player__duration-completed').text(formatTime(completedSec))
+         $('.player__duration-completed').text(formatTime(completedSec));
+         if(completedPercent > 0) {
+             $('.player__splash-photo').css({
+                 //display: 'none'
+                 height: 0
+             });
+             $('.player__splash::after').css({
+
+             })
+         }
 
      }, 1000);
  };
