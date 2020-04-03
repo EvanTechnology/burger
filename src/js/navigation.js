@@ -54,32 +54,46 @@ $ (function(){
         dotIndication(activeDot, requiredDot);
     });
 
-    const fullpage = $('.section', $('.wrapper'));
-    console.log(fullpage);
 
-    //let coordY = 1;
+   
 
-    $('.section').on('wheel', function(e) {
+/*     $('.section').on('wheel', function(e) {
        console.log('jksdbkj');
        const activeSection = $(e.currentTarget);
        console.log(activeSection);
-       const direction = e.originalEvent.deltaY;
-       console.log(direction);
+       const activeSectionIndex = activeSection.index() - 2;
+       console.log(activeSectionIndex);
+       let nextSectionIndex = activeSectionIndex;
+       const wheelDirection = e.originalEvent.deltaY;
+       const sectionHeightPx = activeSection.css('height');
+       const sectionHeight = parseFloat(sectionHeightPx);
+       console.log(sectionHeight);
 
-       //console.log(e.pageY);
-       //const differenceY = coordy - e.pageY;
-       //console.log(differenceY);
-       //activeSection.slideUp();
-       //activeSection.scroll;
+       if(wheelDirection > 0) {
+           nextSectionIndex +=1;
+           
+       } else {
+           nextSectionIndex -=1
+       }
+       if(nextSectionIndex !== -1) {
+       }
+       let scroll = document.querySelector('.wrapper');
+       if(-1 < nextSectionIndex && nextSectionIndex < 9) {
         
-       
-        
-    //    console.log(direction);
-    //     if (e.deltaY > 0) {
-    //         console.log("more");
-    //     //     $('.section').scrolltop(300);
-    //     // }
-    //     }
+       console.log(nextSectionIndex);
+        let shift = -(nextSectionIndex * sectionHeight)+"px";
+        let translateY = 'translateY('+shift+')';
+        console.log(translateY);
+        console.log(shift);
+        console.log(scroll);
+        scroll.style.transform = translateY;
+         $('.wrapper').css({
+          transform: translateY('shift')
+         })
+        }
+ */
+
+ 
     });
 
 });

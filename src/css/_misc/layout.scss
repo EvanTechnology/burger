@@ -75,19 +75,19 @@ p {
             width: 100%;
         };
     };
-    &--contacts {
-        flex-direction: row;
-        height: 80px;
-        min-height: 80px;
+    // &--contacts {
+    //     flex-direction: row;
+    //     height: 80px;
+    //     min-height: 80px;
 
-        @include phones {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 7.1875rem;
-            justify-content: space-evenly;
-        };
-    };
+    //     @include phones {
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         height: 7.1875rem;
+    //         justify-content: space-evenly;
+    //     };
+    // };
     &--work {
         align-items: center;
         justify-content: center;

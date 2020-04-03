@@ -14,7 +14,20 @@
     
     background-color: $black;
     display: flex;
+   
     
+}
+.footer__container {
+         flex-direction: row;
+         height: 80px;
+         min-height: 80px;
+         @include phones {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             height: 7.1875rem;
+             justify-content: space-evenly;
+         };
 }
 .contacts__details {
     width: 50%;
