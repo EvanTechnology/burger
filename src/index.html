@@ -13,47 +13,47 @@
     <div class="wrapper" id="fullpage">
         <ul class="pagination">
             <li class="pagination__item pagination__item--active">
-                <a href="#welcome" class="pagination__link">
+                <a href="#" data-scroll-to="0" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#burgers" class="pagination__link">
+                <a href="#" data-scroll-to="1" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#we" class="pagination__link">
+                <a href="#w" data-scroll-to="2" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#team" class="pagination__link">
+                <a href="#" data-scroll-to="3" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#menu" class="pagination__link">
+                <a href="#" data-scroll-to="4" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#reviews" class="pagination__link">
+                <a href="#" data-scroll-to="5" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#work" class="pagination__link">
+                <a href="#" data-scroll-to="6" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#order" class="pagination__link">
+                <a href="#" data-scroll-to="7" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
             <li class="pagination__item">
-                <a href="#contacts" class="pagination__link">
+                <a href="#" data-scroll-to="8" class="pagination__link">
                     <div class="pagination__dot"></div>
                 </a>
             </li>
@@ -65,857 +65,859 @@
             </button>
         </div>
 
-        <section class="section welcome active" id="welcome">
-            <div class="container">
-                <header class="header">
-                    <div class="logo">
-                        <svg class="logo__image">
-                            <use xlink:href="images/icons/sprite.svg#logo"></use>
-                        </svg>
+        <div class="maincontent">
+            <section class="section welcome active" id="welcome">
+                <div class="container">
+                    <header class="header">
+                        <div class="logo">
+                            <svg class="logo__image">
+                                <use xlink:href="images/icons/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <nav class="header-menu">
+                            <ul class="header-menu__list">
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="2" class="header-menu__link">About Us</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="1" class="header-menu__link">Burgers</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="3" class="header-menu__link">Team</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="4" class="header-menu__link">Menu</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="5" class="header-menu__link">Reviews</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="6" class="header-menu__link">How We Do</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" data-scroll-to="8" class="header-menu__link">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__btn">
+                            <a href="#" data-scroll-to="7" class="btn">
+                                Order
+                            </a>
+    
+                        </div>
+    
+                    </header>
+                    <div class="welcome__content">
+    
+                        <div class="welcome__image">
+                            <img src="images/steam.png" alt="" class="welcome__burger">
+                        </div>
+                        <div class="welcome__text">
+                            <h1 class="welcome__title title">We do</h1>
+                            <div class="welcome__description">real burgers</div>
+                        </div>
                     </div>
-                    <nav class="header-menu">
-                        <ul class="header-menu__list">
-                            <li class="header-menu__item">
-                                <a href="#we" class="header-menu__link">About Us</a>
+                    <div class="control page-control">
+                        <a href="#burgers" class="control__arrow">
+                            <img src="images/arrow-scroll.png" alt="" class="control__scroll">
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section section--align--top burgers" id="burgers">
+                <div class="container container--burgers">
+                    <div class="control">
+                        <a href="#" class="control__arrow control__arrow--left">
+                            <img src="images/arrow-scroll.png" alt="" class="control__scroll">
+                        </a>
+                    </div>
+                    <div class="burgers__window">
+                        <ul class="burgers__list">
+                            <li class="burgers__item">
+                                <div class="burgers__content">
+                                    <div class="burgers__image">
+                                        <img src="images/burgers_1.png" alt="burger photo" class="burgers__photo">
+                                        <button type="button" class="burgers__ingredients ingredients">Ingredients</button>
+                                        <div class="ingredients__container">
+    
+    
+                                            <ul class="ingredients__list">
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Beef</h5>
+                                                    <div class="ingredients__quantity">300g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Buns</h5>
+                                                    <div class="ingredients__quantity">100g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#greens"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Greens</h5>
+                                                    <div class="ingredients__quantity">70g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Sauce</h5>
+                                                    <div class="ingredients__quantity">150g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#veggies"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Veggies</h5>
+                                                    <div class="ingredients__quantity">200g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Cheese</h5>
+                                                    <div class="ingredients__quantity">80g</div>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="ingredients__menu menu-close-btn">
+                                                <span class="ingredients__menu-item menu-close-btn__item"></span>
+                                            </button>
+                                        </div>
+                                        <div class="burgers__nutrition nutrition">
+                                            <div class="nutrition__number">1200</div>
+                                            <div class="nutrition__units">Cal</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__description">
+                                        <h2 class="burgers__name title title--white">Dark beef burger</h2>
+                                        <div class="burgers__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Tempora quos harum sunt nam, voluptatibus rerum, nostrum libero ut accusantium
+                                            quisquam unde veniam nisi, officiis aliquam ducimus. A repellat rerum itaque.
+                                        </div>
+                                        <div class="burgers__price">
+                                            <span class="price">AU$ 10</span>
+                                            <div class="order__btn">
+                                                <a href="#" data-scroll-to="7" class="btn">
+                                                    Order
+                                                </a>
+                        
+                                            </div>
+    
+                                            <!-- <button type="button" class=" burgers__btn btn">order</button> -->
+                                        </div>
+    
+                                    </div>
+                                </div>
                             </li>
-                            <li class="header-menu__item">
-                                <a href="#burgers" class="header-menu__link">Burgers</a>
+                            <li class="burgers__item">
+                                <div class="burgers__content">
+                                    <div class="burgers__image">
+                                        <img src="images/burgers_2.png" alt="burger photo" class="burgers__photo">
+                                        <button type="button" class="burgers__ingredients ingredients">Ingredients</button>
+                                        <div class="ingredients__container">
+    
+    
+                                            <ul class="ingredients__list">
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Beef</h5>
+                                                    <div class="ingredients__quantity">300g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Buns</h5>
+                                                    <div class="ingredients__quantity">100g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#greens"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Greens</h5>
+                                                    <div class="ingredients__quantity">70g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Sauce</h5>
+                                                    <div class="ingredients__quantity">150g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#veggies"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Veggies</h5>
+                                                    <div class="ingredients__quantity">200g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Cheese</h5>
+                                                    <div class="ingredients__quantity">80g</div>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="ingredients__menu menu-close-btn">
+                                                <span class="ingredients__menu-item menu-close-btn__item"></span>
+                                            </button>
+                                        </div>
+                                        <div class="burgers__nutrition nutrition">
+                                            <div class="nutrition__number">1200</div>
+                                            <div class="nutrition__units">Cal</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__description">
+                                        <h2 class="burgers__name title title--white">Burger Sandwich</h2>
+                                        <div class="burgers__text">bla-bla-bla is aliquam ducimus. A repellat rerum itaque.
+                                        </div>
+                                        <div class="burgers__price">
+                                            <span class="price">AU$ 15</span>
+                                            <div class="order__btn">
+                                                <a href="#" data-scroll-to="7" class="btn">
+                                                    Order
+                                                </a>
+                        
+                                            </div>
+                                            <!-- <button type="button" class=" burgers__btn btn">order</button> -->
+                                        </div>
+    
+                                    </div>
+                                </div>
                             </li>
-                            <li class="header-menu__item">
-                                <a href="#team" class="header-menu__link">Team</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#menu" class="header-menu__link">Menu</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#reviews" class="header-menu__link">Reviews</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#work" class="header-menu__link">How We Do</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#contacts" class="header-menu__link">Contacts</a>
+                            <li class="burgers__item">
+                                <div class="burgers__content">
+                                    <div class="burgers__image">
+                                        <img src="images/burgers_1.png" alt="burger photo" class="burgers__photo">
+                                        <button type="button" class="burgers__ingredients ingredients">Ingredients</button>
+                                        <div class="ingredients__container">
+    
+    
+                                            <ul class="ingredients__list">
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Beef</h5>
+                                                    <div class="ingredients__quantity">300g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Buns</h5>
+                                                    <div class="ingredients__quantity">100g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#greens"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Greens</h5>
+                                                    <div class="ingredients__quantity">70g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Sauce</h5>
+                                                    <div class="ingredients__quantity">150g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#veggies"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Veggies</h5>
+                                                    <div class="ingredients__quantity">200g</div>
+                                                </li>
+                                                <li class="ingredients__item">
+                                                    <svg class="ingredients__image">
+                                                        <use xlink:href="images/icons/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <h5 class="ingredients__name">Cheese</h5>
+                                                    <div class="ingredients__quantity">80g</div>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="ingredients__menu menu-close-btn">
+                                                <span class="ingredients__menu-item menu-close-btn__item"></span>
+                                            </button>
+                                        </div>
+                                        <div class="burgers__nutrition nutrition">
+                                            <div class="nutrition__number">1200</div>
+                                            <div class="nutrition__units">Cal</div>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__description">
+                                        <h2 class="burgers__name title title--white">One More burger</h2>
+                                        <div class="burgers__text">.......Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Tempora quos harum sunt nam, voluptatibus rerum, nostrum libero ut accusantium
+                                            quisquam unde veniam nisi, officiis aliquam ducimus. A repellat rerum itaque.
+                                        </div>
+                                        <div class="burgers__price">
+                                            <span class="price">AU$ 12</span>
+                                            <div class="order__btn">
+                                                <a href="#" data-scroll-to="7" class="btn">
+                                                    Order
+                                                </a>
+                        
+                                            </div>
+                                            <!-- <button type="button" class=" burgers__btn btn">order</button> -->
+                                        </div>
+    
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="header__btn">
-                        <a href="#order" class="btn">
-                            Order
+                    </div>
+    
+                    <div class="control">
+                        <a href="#" class="control__arrow control__arrow--right">
+                            <img src="images/arrow-scroll.png" alt="" class="control__scroll">
                         </a>
-
                     </div>
-
-                </header>
-                <div class="welcome__content">
-
-                    <div class="welcome__image">
-                        <img src="images/steam.png" alt="" class="welcome__burger">
-                    </div>
-                    <div class="welcome__text">
-                        <h1 class="welcome__title title">We do</h1>
-                        <div class="welcome__description">real burgers</div>
-                    </div>
+    
+    
                 </div>
-                <div class="control page-control">
-                    <a href="#burgers" class="control__arrow">
-                        <img src="images/arrow-scroll.png" alt="" class="control__scroll">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section--align--top burgers" id="burgers">
-            <div class="container container--burgers">
-                <div class="control">
-                    <a href="#" class="control__arrow control__arrow--left">
-                        <img src="images/arrow-scroll.png" alt="" class="control__scroll">
-                    </a>
-                </div>
-                <div class="burgers__window">
-                    <ul class="burgers__list">
-                        <li class="burgers__item">
-                            <div class="burgers__content">
-                                <div class="burgers__image">
-                                    <img src="images/burgers_1.png" alt="burger photo" class="burgers__photo">
-                                    <button type="button" class="burgers__ingredients ingredients">Ingredients</button>
-                                    <div class="ingredients__container">
-
-
-                                        <ul class="ingredients__list">
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#beef"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Beef</h5>
-                                                <div class="ingredients__quantity">300g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#buns"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Buns</h5>
-                                                <div class="ingredients__quantity">100g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#greens"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Greens</h5>
-                                                <div class="ingredients__quantity">70g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#sauce"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Sauce</h5>
-                                                <div class="ingredients__quantity">150g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#veggies"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Veggies</h5>
-                                                <div class="ingredients__quantity">200g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#cheese"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Cheese</h5>
-                                                <div class="ingredients__quantity">80g</div>
-                                            </li>
-                                        </ul>
-                                        <button type="button" class="ingredients__menu menu-close-btn">
-                                            <span class="ingredients__menu-item menu-close-btn__item"></span>
-                                        </button>
-                                    </div>
-                                    <div class="burgers__nutrition nutrition">
-                                        <div class="nutrition__number">1200</div>
-                                        <div class="nutrition__units">Cal</div>
-                                    </div>
-                                </div>
-                                <div class="burgers__description">
-                                    <h2 class="burgers__name title title--white">Dark beef burger</h2>
-                                    <div class="burgers__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempora quos harum sunt nam, voluptatibus rerum, nostrum libero ut accusantium
-                                        quisquam unde veniam nisi, officiis aliquam ducimus. A repellat rerum itaque.
-                                    </div>
-                                    <div class="burgers__price">
-                                        <span class="price">AU$ 10</span>
-                                        <div class="order__btn">
-                                            <a href="#order" class="btn">
-                                                Order
-                                            </a>
-                    
-                                        </div>
-
-                                        <!-- <button type="button" class=" burgers__btn btn">order</button> -->
-                                    </div>
-
-                                </div>
+            </section>
+    
+            <section class="section section--align--top we" id="we">
+                <div class="container container--we">
+                    <h2 class="title we__title title--black">
+                        We are the best
+                    </h2>
+                    <ul class="we__list list">
+                        <li class="list__item pros">
+                            <div class="pros__image">
+                                <svg class="pics">
+                                    <use xlink:href="images/icons/sprite.svg#meat"></use>
+                                </svg>
+                                <!-- <img class="pros__pic" src="icons/meat.png" alt="beef logo"> -->
+                            </div>
+                            <div class="pros__text">
+                                <h3 class="pros__title">100% fresh beef</h3>
+                                <div class="pros__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Accusamus, officia eligendi. Amet, minus repellat nihil ipsam .</div>
                             </div>
                         </li>
-                        <li class="burgers__item">
-                            <div class="burgers__content">
-                                <div class="burgers__image">
-                                    <img src="images/burgers_2.png" alt="burger photo" class="burgers__photo">
-                                    <button type="button" class="burgers__ingredients ingredients">Ingredients</button>
-                                    <div class="ingredients__container">
-
-
-                                        <ul class="ingredients__list">
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#beef"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Beef</h5>
-                                                <div class="ingredients__quantity">300g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#buns"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Buns</h5>
-                                                <div class="ingredients__quantity">100g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#greens"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Greens</h5>
-                                                <div class="ingredients__quantity">70g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#sauce"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Sauce</h5>
-                                                <div class="ingredients__quantity">150g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#veggies"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Veggies</h5>
-                                                <div class="ingredients__quantity">200g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#cheese"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Cheese</h5>
-                                                <div class="ingredients__quantity">80g</div>
-                                            </li>
-                                        </ul>
-                                        <button type="button" class="ingredients__menu menu-close-btn">
-                                            <span class="ingredients__menu-item menu-close-btn__item"></span>
-                                        </button>
-                                    </div>
-                                    <div class="burgers__nutrition nutrition">
-                                        <div class="nutrition__number">1200</div>
-                                        <div class="nutrition__units">Cal</div>
-                                    </div>
-                                </div>
-                                <div class="burgers__description">
-                                    <h2 class="burgers__name title title--white">Burger Sandwich</h2>
-                                    <div class="burgers__text">bla-bla-bla is aliquam ducimus. A repellat rerum itaque.
-                                    </div>
-                                    <div class="burgers__price">
-                                        <span class="price">AU$ 15</span>
-                                        <div class="order__btn">
-                                            <a href="#order" class="btn">
-                                                Order
-                                            </a>
-                    
-                                        </div>
-                                        <!-- <button type="button" class=" burgers__btn btn">order</button> -->
-                                    </div>
-
-                                </div>
+                        <li class="list__item pros">
+                            <div class="pros__image">
+                                <svg class="pics">
+                                    <use xlink:href="images/icons/sprite.svg#hand"></use>
+                                </svg>
+                                <!-- <img class="pros__pic" src="icons/hand.png" alt="beef logo"> -->
+                            </div>
+                            <div class="pros__text">
+                                <h3 class="pros__title">Hand made</h3>
+                                <div class="pros__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Accusamus, officia eligendi. Amet, minus repellat nihil ipsam nisi eveniet porro tempora
+                                    sapiente .</div>
                             </div>
                         </li>
-                        <li class="burgers__item">
-                            <div class="burgers__content">
-                                <div class="burgers__image">
-                                    <img src="images/burgers_1.png" alt="burger photo" class="burgers__photo">
-                                    <button type="button" class="burgers__ingredients ingredients">Ingredients</button>
-                                    <div class="ingredients__container">
-
-
-                                        <ul class="ingredients__list">
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#beef"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Beef</h5>
-                                                <div class="ingredients__quantity">300g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#buns"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Buns</h5>
-                                                <div class="ingredients__quantity">100g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#greens"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Greens</h5>
-                                                <div class="ingredients__quantity">70g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#sauce"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Sauce</h5>
-                                                <div class="ingredients__quantity">150g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#veggies"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Veggies</h5>
-                                                <div class="ingredients__quantity">200g</div>
-                                            </li>
-                                            <li class="ingredients__item">
-                                                <svg class="ingredients__image">
-                                                    <use xlink:href="images/icons/sprite.svg#cheese"></use>
-                                                </svg>
-                                                <h5 class="ingredients__name">Cheese</h5>
-                                                <div class="ingredients__quantity">80g</div>
-                                            </li>
-                                        </ul>
-                                        <button type="button" class="ingredients__menu menu-close-btn">
-                                            <span class="ingredients__menu-item menu-close-btn__item"></span>
-                                        </button>
-                                    </div>
-                                    <div class="burgers__nutrition nutrition">
-                                        <div class="nutrition__number">1200</div>
-                                        <div class="nutrition__units">Cal</div>
-                                    </div>
-                                </div>
-                                <div class="burgers__description">
-                                    <h2 class="burgers__name title title--white">One More burger</h2>
-                                    <div class="burgers__text">.......Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Tempora quos harum sunt nam, voluptatibus rerum, nostrum libero ut accusantium
-                                        quisquam unde veniam nisi, officiis aliquam ducimus. A repellat rerum itaque.
-                                    </div>
-                                    <div class="burgers__price">
-                                        <span class="price">AU$ 12</span>
-                                        <div class="order__btn">
-                                            <a href="#order" class="btn">
-                                                Order
-                                            </a>
-                    
-                                        </div>
-                                        <!-- <button type="button" class=" burgers__btn btn">order</button> -->
-                                    </div>
-
-                                </div>
+                        <li class="list__item pros">
+                            <div class="pros__image">
+                                <svg class="pics">
+                                    <use xlink:href="images/icons/sprite.svg#natural"></use>
+                                </svg>
+                                <!-- <img class="pros__pic" src="icons/natural.png" alt="natural logo"> -->
+                            </div>
+                            <div class="pros__text">
+                                <h3 class="pros__title">Organic ingredients</h3>
+                                <div class="pros__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Accusamus, officia eligendi.</div>
                             </div>
                         </li>
                     </ul>
                 </div>
-
-                <div class="control">
-                    <a href="#" class="control__arrow control__arrow--right">
-                        <img src="images/arrow-scroll.png" alt="" class="control__scroll">
-                    </a>
+            </section>
+    
+            <section class="section team" id="team">
+    
+                <div class="team__container">
+                    <div class="team__content">
+                        <h2 class="title team__title">our TEAM</h2>
+                        <ul class="team__list accordeon">
+                            <li class="team__item">
+                                <button type="button" class="team__name">Daniel Radcliffe</button>
+                                <div class="team__profile profile">
+                                    <div class="profile__image">
+                                        <img src="images/team__member.jpg" alt="" class="profile__photo">
+                                    </div>
+                                    <div class="profile__content">
+                                        <h4 class="profile__position">Barista</h4>
+                                        <div class="profile__description">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--active">
+                                <button type="button" class="team__name">Brad Pitt</button>
+                                <div class="team__profile profile">
+                                    <div class="profile__image">
+                                        <img class="profile__photo" src="images/team__member.jpg" alt=""
+                                            class="profile__photo">
+                                    </div>
+                                    <div class="profile__content">
+                                        <h4 class="profile__position">HR Manager</h4>
+                                        <div class="profile__description">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button type="button" class="team__name">Angelina Jolie</button>
+                                <div class="team__profile profile">
+                                    <div class="profile__image">
+                                        <img src="images/team__member.jpg" alt="" class="profile__photo">
+                                    </div>
+                                    <div class="profile__content">
+                                        <h4 class="profile__position">Kitchenhand</h4>
+                                        <div class="profile__description">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button type="button" class="team__name">Jennifer Aniston</button>
+                                <div class="team__profile profile">
+                                    <div class="profile__image">
+                                        <img src="images/team__member.jpg" alt="" class="profile__photo">
+                                    </div>
+                                    <div class="profile__content">
+                                        <h4 class="profile__position">Manager</h4>
+                                        <div class="profile__description">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    </div>
+                                </div>
+                            </li>
+    
+                        </ul>
+                    </div>
+    
                 </div>
-
-
-            </div>
-        </section>
-
-        <section class="section section--align--top we" id="we">
-            <div class="container container--we">
-                <h2 class="title we__title title--black">
-                    We are the best
-                </h2>
-                <ul class="we__list list">
-                    <li class="list__item pros">
-                        <div class="pros__image">
-                            <svg class="pics">
-                                <use xlink:href="images/icons/sprite.svg#meat"></use>
-                            </svg>
-                            <!-- <img class="pros__pic" src="icons/meat.png" alt="beef logo"> -->
-                        </div>
-                        <div class="pros__text">
-                            <h3 class="pros__title">100% fresh beef</h3>
-                            <div class="pros__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Accusamus, officia eligendi. Amet, minus repellat nihil ipsam .</div>
-                        </div>
-                    </li>
-                    <li class="list__item pros">
-                        <div class="pros__image">
-                            <svg class="pics">
-                                <use xlink:href="images/icons/sprite.svg#hand"></use>
-                            </svg>
-                            <!-- <img class="pros__pic" src="icons/hand.png" alt="beef logo"> -->
-                        </div>
-                        <div class="pros__text">
-                            <h3 class="pros__title">Hand made</h3>
-                            <div class="pros__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Accusamus, officia eligendi. Amet, minus repellat nihil ipsam nisi eveniet porro tempora
-                                sapiente .</div>
-                        </div>
-                    </li>
-                    <li class="list__item pros">
-                        <div class="pros__image">
-                            <svg class="pics">
-                                <use xlink:href="images/icons/sprite.svg#natural"></use>
-                            </svg>
-                            <!-- <img class="pros__pic" src="icons/natural.png" alt="natural logo"> -->
-                        </div>
-                        <div class="pros__text">
-                            <h3 class="pros__title">Organic ingredients</h3>
-                            <div class="pros__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Accusamus, officia eligendi.</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section team" id="team">
-
-            <div class="team__container">
-                <div class="team__content">
-                    <h2 class="title team__title">our TEAM</h2>
-                    <ul class="team__list accordeon">
-                        <li class="team__item">
-                            <button type="button" class="team__name">Daniel Radcliffe</button>
-                            <div class="team__profile profile">
-                                <div class="profile__image">
-                                    <img src="images/team__member.jpg" alt="" class="profile__photo">
-                                </div>
-                                <div class="profile__content">
-                                    <h4 class="profile__position">Barista</h4>
-                                    <div class="profile__description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                </div>
-                            </div>
+    
+            </section>
+    
+            <section class="section menu" id="menu">
+                <div class="container container--menu">
+                    <h2 class="title title--white menu__title">Menu</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--meatlovers">
+                            <button type="button" class="menu__btn">
+                                <span class="menu__name">For meatlovers</span>
+                            </button>
+                            <div class="menu__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Debitis dolor, atque soluta maiores sit eligendi ab nostrum animi? Doloremque cumque quo
+                                iste id eius velit autem totam dolorum, aperiam in. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Ab illum optio tenetur aperiam sapiente atque quod est
+                                omnis repudiandae voluptatibus quos perferendis labore cumque minima, illo autem animi
+                                similique impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo saepe
+                                sed, quos corporis numquam doloribus quod, autem eaque rerum itaque earum possimus harum
+                                debitis deleniti dolorem, exercitationem perspiciatis officia?</div>
                         </li>
-                        <li class="team__item team__item--active">
-                            <button type="button" class="team__name">Brad Pitt</button>
-                            <div class="team__profile profile">
-                                <div class="profile__image">
-                                    <img class="profile__photo" src="images/team__member.jpg" alt=""
-                                        class="profile__photo">
-                                </div>
-                                <div class="profile__content">
-                                    <h4 class="profile__position">HR Manager</h4>
-                                    <div class="profile__description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                </div>
-                            </div>
+                        <li class="menu__item menu__item--vegetarian menu__item--active">
+                            <button type="button" class="menu__btn">
+                                <span class="menu__name">Vegetarian</span>
+                            </button>
+                            <div class="menu__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Debitis dolor, atque soluta maiores sit eligendi ab nostrum animi? Doloremque cumque quo
+                                iste id eius velit autem totam dolorum, aperiam in.</div>
                         </li>
-                        <li class="team__item">
-                            <button type="button" class="team__name">Angelina Jolie</button>
-                            <div class="team__profile profile">
-                                <div class="profile__image">
-                                    <img src="images/team__member.jpg" alt="" class="profile__photo">
-                                </div>
-                                <div class="profile__content">
-                                    <h4 class="profile__position">Kitchenhand</h4>
-                                    <div class="profile__description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                </div>
-                            </div>
+                        <li class="menu__item menu__item--lowcarbs">
+                            <button type="button" class="menu__btn">
+                                <span class="menu__name">Low Carbs</span>
+                            </button>
+                            <div class="menu__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Debitis dolor, atque soluta maiores sit eligendi ab nostrum animi? Doloremque cumque quo
+                                iste id eius velit autem totam dolorum, aperiam in.</div>
                         </li>
-                        <li class="team__item">
-                            <button type="button" class="team__name">Jennifer Aniston</button>
-                            <div class="team__profile profile">
-                                <div class="profile__image">
-                                    <img src="images/team__member.jpg" alt="" class="profile__photo">
-                                </div>
-                                <div class="profile__content">
-                                    <h4 class="profile__position">Manager</h4>
-                                    <div class="profile__description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                </div>
-                            </div>
-                        </li>
-
+    
                     </ul>
+    
+    
+    
                 </div>
-
-            </div>
-
-        </section>
-
-        <section class="section menu" id="menu">
-            <div class="container container--menu">
-                <h2 class="title title--white menu__title">Menu</h2>
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--meatlovers">
-                        <button type="button" class="menu__btn">
-                            <span class="menu__name">For meatlovers</span>
-                        </button>
-                        <div class="menu__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis dolor, atque soluta maiores sit eligendi ab nostrum animi? Doloremque cumque quo
-                            iste id eius velit autem totam dolorum, aperiam in. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Ab illum optio tenetur aperiam sapiente atque quod est
-                            omnis repudiandae voluptatibus quos perferendis labore cumque minima, illo autem animi
-                            similique impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo saepe
-                            sed, quos corporis numquam doloribus quod, autem eaque rerum itaque earum possimus harum
-                            debitis deleniti dolorem, exercitationem perspiciatis officia?</div>
+            </section>
+    
+            <section class="section section--align--top reviews" id="reviews">
+    
+                <ul class="reviews__list">
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_1.jpg" alt="photo 1" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Constantin Spielberg</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+    
+                        </div>
                     </li>
-                    <li class="menu__item menu__item--vegetarian menu__item--active">
-                        <button type="button" class="menu__btn">
-                            <span class="menu__name">Vegetarian</span>
-                        </button>
-                        <div class="menu__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis dolor, atque soluta maiores sit eligendi ab nostrum animi? Doloremque cumque quo
-                            iste id eius velit autem totam dolorum, aperiam in.</div>
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_2.jpg" alt="photo 2" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Jon Snow</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, perferendis tempora?
+                                    Commodi dolorum reiciendis fugit alias rerum! Veniam suscipit vero quas natus rerum
+                                    quaerat placeat eveniet accusantium illum, nemo labore!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+    
+                            <button type="button" class="btn btn--black">More...</button>
+    
+                        </div>
                     </li>
-                    <li class="menu__item menu__item--lowcarbs">
-                        <button type="button" class="menu__btn">
-                            <span class="menu__name">Low Carbs</span>
-                        </button>
-                        <div class="menu__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis dolor, atque soluta maiores sit eligendi ab nostrum animi? Doloremque cumque quo
-                            iste id eius velit autem totam dolorum, aperiam in.</div>
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_3.jpg" alt="photo 3" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Jaime Lannister</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                     ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+                        </div>
                     </li>
-
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_4.jpg" alt="photo 4" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Cersei Lannister</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    ctetur nesciunt eos laudantium modi!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+                        </div>
+                    </li>
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_5.jpg" alt="photo 5" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Catelyn Stark</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tetur nesciunt eos laudantium modi!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+                        </div>
+                    </li>
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_6.jpg" alt="photo 6" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Daenerys Targaryen</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    em ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis eos
+                                    excepturi. Culpa minus laborum aliquid non deleniti vitae dolore dolores, quaerat magni
+                                    neque laboriosam, architecto omnis consectetur delectus perferendis?
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+                        </div>
+                    </li>
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_7.jpg" alt="photo 7" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Sansa Stark</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                     ipsum dolor sit, amet consectetur adipisicing elit. Sit modi totam unde, a
+                                    eligendi possimus id corporis natus, eius quas laboriosam dolore voluptatem laudantium
+                                    culpa expedita officia minus at repellendus.
+                                    modi. Magnam officiis reprehenderit ipsa nisi repudiandae tempora quae odio
+                                    possimus. Maiores eveniet sint exercitationem aspernatur similique?
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+                        </div>
+                    </li>
+                    <li class="reviews__item review">
+                        <img src="images/reviews_photo_8.jpg" alt="photo 8" class="review__photo">
+                        <div class="review__content">
+                            <h3 class="review__name">Joffrey Baratheon</h3>
+                            <div class="review__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
+                                    fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
+                                    que nostrum vel.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus voluptatem quaerat
+                                    e libero saepe cumque? Ipsa, ipsam natus.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
+                                    dolores
+                                    tenetur eaque nostrum vel.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn--black">More...</button>
+                        </div>
+                    </li>
                 </ul>
-
-
-
-            </div>
-        </section>
-
-        <section class="section section--align--top reviews" id="reviews">
-
-            <ul class="reviews__list">
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_1.jpg" alt="photo 1" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Constantin Spielberg</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_2.jpg" alt="photo 2" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Jon Snow</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, perferendis tempora?
-                                Commodi dolorum reiciendis fugit alias rerum! Veniam suscipit vero quas natus rerum
-                                quaerat placeat eveniet accusantium illum, nemo labore!
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-
-                        <button type="button" class="btn btn--black">More...</button>
-
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_3.jpg" alt="photo 3" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Jaime Lannister</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                 ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_4.jpg" alt="photo 4" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Cersei Lannister</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                ctetur nesciunt eos laudantium modi!
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_5.jpg" alt="photo 5" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Catelyn Stark</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tetur nesciunt eos laudantium modi!
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_6.jpg" alt="photo 6" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Daenerys Targaryen</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                em ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis eos
-                                excepturi. Culpa minus laborum aliquid non deleniti vitae dolore dolores, quaerat magni
-                                neque laboriosam, architecto omnis consectetur delectus perferendis?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_7.jpg" alt="photo 7" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Sansa Stark</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                 ipsum dolor sit, amet consectetur adipisicing elit. Sit modi totam unde, a
-                                eligendi possimus id corporis natus, eius quas laboriosam dolore voluptatem laudantium
-                                culpa expedita officia minus at repellendus.
-                                modi. Magnam officiis reprehenderit ipsa nisi repudiandae tempora quae odio
-                                possimus. Maiores eveniet sint exercitationem aspernatur similique?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-                    </div>
-                </li>
-                <li class="reviews__item review">
-                    <img src="images/reviews_photo_8.jpg" alt="photo 8" class="review__photo">
-                    <div class="review__content">
-                        <h3 class="review__name">Joffrey Baratheon</h3>
-                        <div class="review__text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                aspernatur tempora tenetur debitis eius maxime. Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit vero
-                                fugit perferendis est modi quas fugiat magni at qui quasi doloremque quo, odio
-                                que nostrum vel.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus voluptatem quaerat
-                                e libero saepe cumque? Ipsa, ipsam natus.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aspernatur quam cum
-                                dolores
-                                tenetur eaque nostrum vel.
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn--black">More...</button>
-                    </div>
-                </li>
-            </ul>
-
-        </section>
-
-        <section class="section section--align--top work" id="work">
-            <div class="container container--work">
-                <h2 class="title we__title title--black">
-                    How we work
-                </h2>
-                <div class="player__container">
-                    <div class="player active">
-                         <div class="player__wrapper">
-                             <div class="player__element" id="youtube-player"></div>
-                             <div class="player__splash">
-                                 <img src="/images/player_photo.jpg" alt="" class="player__splash-photo">
+    
+            </section>
+    
+            <section class="section section--align--top work" id="work">
+                <div class="container container--work">
+                    <h2 class="title we__title title--black">
+                        How we work
+                    </h2>
+                    <div class="player__container">
+                        <div class="player active">
+                             <div class="player__wrapper">
+                                 <div class="player__element" id="youtube-player"></div>
+                                 <div class="player__splash">
+                                     <img src="/images/player_photo.jpg" alt="" class="player__splash-photo">
+                                 </div>
                              </div>
-                         </div>
-                         <div class="player__controls">
-                            <div class="player__start"></div>
-                            <div class="player__playback">
-                                 <button class="player__playback-btn"></button>
-                            </div>
-                            <div class="player__mute"></div>
-                            <div class="player__volume-scale">
-                                <button class="player__volume-btn"></button>
-                            </div>
-                             <!-- <div class="player__duration">
-                                 <span class="player__duration-completed"></span>
-                                 <span class="player__duration-estimated"></span>
-                             </div> -->
-                         </div>
+                             <div class="player__controls">
+                                <div class="player__start"></div>
+                                <div class="player__playback">
+                                     <button class="player__playback-btn"></button>
+                                </div>
+                                <div class="player__mute"></div>
+                                <div class="player__volume-scale">
+                                    <button class="player__volume-btn"></button>
+                                </div>
+                                 <!-- <div class="player__duration">
+                                     <span class="player__duration-completed"></span>
+                                     <span class="player__duration-estimated"></span>
+                                 </div> -->
+                             </div>
+                        </div>
                     </div>
+                    <!-- <video controls  poster="/images/work_picture.jpg" class="video">
+                        <source src="" type="video/mp4">
+                            the video should be here
+                    </video> -->
+                   
                 </div>
-                <!-- <video controls  poster="/images/work_picture.jpg" class="video">
-                    <source src="" type="video/mp4">
-                        the video should be here
-                </video> -->
-               
-            </div>
-        </section>
-
-        <section class="section order" id="order">
-            <div class="container container--order">
-                <h2 class="title title--order">Delivery</h2>
-                <form class="order__form">
-                    <div class="order__column">
-                        <div class="order__row">
-                            <label class="order__block">
-                                <div class="order__title">First Name</div>
-                                <input type="text" class="order__input" name="name" required>
-                                <div class="error"></div>
-                            </label>
-                            <label class="order__block">
-                                <div class="order__title">Phone number</div>
-                                <input type="text" class="order__input" name="phone" placeholder="ex 0422371802" required>
-                            </label>
+            </section>
+    
+            <section class="section order" id="order">
+                <div class="container container--order">
+                    <h2 class="title title--order">Delivery</h2>
+                    <form class="order__form">
+                        <div class="order__column">
+                            <div class="order__row">
+                                <label class="order__block">
+                                    <div class="order__title">First Name</div>
+                                    <input type="text" class="order__input" name="name" required>
+                                    <div class="error"></div>
+                                </label>
+                                <label class="order__block">
+                                    <div class="order__title">Phone number</div>
+                                    <input type="text" class="order__input" name="phone" placeholder="ex 0422371802" required>
+                                </label>
+                            </div>
+                            <div class="order__row">
+                                <label class="order__block">
+                                    <div class="order__title">Street</div>
+                                    <input type="text" class="order__input">
+                                </label>
+                            </div>
+                            <div class="order__row">
+                                <label class="order__block">
+                                    <div class="order__title">Unit/Apartment</div>
+                                    <input type="text" class="order__input">
+                                </label>
+                                <label class="order__block">
+                                    <div class="order__title">Level</div>
+                                    <input type="text" class="order__input">
+                                </label>
+                                <label class="order__block">
+                                    <div class="order__title">Surburb</div>
+                                    <input type="text" class="order__input">
+                                </label>
+                                <label class="order__block">
+                                    <div class="order__title">Postcode</div>
+                                    <input type="text" class="order__input">
+                                </label>
+    
+                            </div>
                         </div>
-                        <div class="order__row">
-                            <label class="order__block">
-                                <div class="order__title">Street</div>
-                                <input type="text" class="order__input">
-                            </label>
+                        <div class="order__column">
+                            <div class="order__row">
+                                <label class="order__block">
+                                    <div class="order__title">Comments</div>
+                                    <textarea class="order__input order__input--comments" name="comment" placeholder="Write your comments here" required></textarea>
+                                </label>
+                            </div>
+                            <div class="order__row order__row--radio">
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="cashpayment" value="yes" checked>
+                                    <div class="radio__point"></div>
+                                    <span class="radio__description">I need change</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="cashpayment" value="no">
+                                    <div class="radio__point"></div>
+                                    <span class="radio__description">I pay by card</span>
+                                </label>
+                            </div>
+                            <div class="order__row">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" name="call_me" id="">
+                                    <div class="checkbox__point"></div>
+                                    <span class="checkbox__description">Do not call me</span>
+                                </label>
+    
+                            </div>
+                            <div class="order__row">
+                                <button type="submit" class="btn" id="submitOrder">Submit</button>
+                                <button type="reset" class="btn btn--reset">Reset</button>
+    
+                            </div>
                         </div>
-                        <div class="order__row">
-                            <label class="order__block">
-                                <div class="order__title">Unit/Apartment</div>
-                                <input type="text" class="order__input">
-                            </label>
-                            <label class="order__block">
-                                <div class="order__title">Level</div>
-                                <input type="text" class="order__input">
-                            </label>
-                            <label class="order__block">
-                                <div class="order__title">Surburb</div>
-                                <input type="text" class="order__input">
-                            </label>
-                            <label class="order__block">
-                                <div class="order__title">Postcode</div>
-                                <input type="text" class="order__input">
-                            </label>
-
-                        </div>
-                    </div>
-                    <div class="order__column">
-                        <div class="order__row">
-                            <label class="order__block">
-                                <div class="order__title">Comments</div>
-                                <textarea class="order__input order__input--comments" name="comment" placeholder="Write your comments here" required></textarea>
-                            </label>
-                        </div>
-                        <div class="order__row order__row--radio">
-                            <label class="radio">
-                                <input type="radio" class="radio__input" name="cashpayment" value="yes" checked>
-                                <div class="radio__point"></div>
-                                <span class="radio__description">I need change</span>
-                            </label>
-                            <label class="radio">
-                                <input type="radio" class="radio__input" name="cashpayment" value="no">
-                                <div class="radio__point"></div>
-                                <span class="radio__description">I pay by card</span>
-                            </label>
-                        </div>
-                        <div class="order__row">
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox__input" name="call_me" id="">
-                                <div class="checkbox__point"></div>
-                                <span class="checkbox__description">Do not call me</span>
-                            </label>
-
-                        </div>
-                        <div class="order__row">
-                            <button type="submit" class="btn" id="submitOrder">Submit</button>
-                            <button type="reset" class="btn btn--reset">Reset</button>
-
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section class="section contacts" id="contacts">
-
-            <div class="map" id="map">
-                <!-- <img src="images/map.jpg" alt="Map" class="map__image"> -->
-            </div>
-            <footer class="footer">
-                <div class="container footer__container">
-                    <div class="contacts__details">
-                        <div class="contacts__address">1-2 Tarni court, Port Adelaide 5008</div>
-                        <a href="#" class="contacts__phone">+61 422 371 802</a>
-
-                    </div>
-                    <ul class="socials__list">
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <svg class="socials__logo">
-                                    <use xlink:href="images/icons/sprite.svg#vk"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <svg class="socials__logo">
-                                    <use xlink:href="images/icons/sprite.svg#fb"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <svg class="socials__logo">
-                                    <use xlink:href="images/icons/sprite.svg#inst"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#" class="socials__link">
-                                <svg class="socials__logo">
-                                    <use xlink:href="images/icons/sprite.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </form>
                 </div>
-            </footer>
-
-
-        </section>
+            </section>
+    
+            <section class="section contacts" id="contacts">
+    
+                <div class="map" id="map">
+                    <!-- <img src="images/map.jpg" alt="Map" class="map__image"> -->
+                </div>
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <div class="contacts__details">
+                            <div class="contacts__address">1-2 Tarni court, Port Adelaide 5008</div>
+                            <a href="#" class="contacts__phone">+61 422 371 802</a>
+    
+                        </div>
+                        <ul class="socials__list">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__logo">
+                                        <use xlink:href="images/icons/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__logo">
+                                        <use xlink:href="images/icons/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__logo">
+                                        <use xlink:href="images/icons/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__logo">
+                                        <use xlink:href="images/icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+    
+    
+            </section>
+        </div>
 
 
     </div>
@@ -930,13 +932,14 @@
     <script src="js/orderform.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/navigation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
-    <script src="js/fullpage.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=265f5961-a02d-4df3-9c66-73cbde133e2c&lang=ru_RU" type="text/javascript">
     </script>
     <script src="js/openmap.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    
 
 </body>
 

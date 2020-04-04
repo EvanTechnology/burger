@@ -1,7 +1,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     min-height: 650px;
     &--align--top {
         justify-content: flex-start;

@@ -25,6 +25,7 @@
     height: 0.25rem;
     border-radius: 50%;
     background-color: #ffffff;
+    border-color: #ffffff;
     position: relative;
 }
 .pagination__dot:before {
@@ -42,6 +43,6 @@
 }
 .pagination__item--active {
     .pagination__dot:before {
-        border-color: #ffffff;
+        border-color: inherit;
     }
 }

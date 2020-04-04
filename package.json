@@ -24,6 +24,8 @@
     "del": "^5.1.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.0.2",
+    "jquery-touchswipe": "^1.6.19",
+    "mobile-detect": "^1.4.4",
     "node-sass": "^4.13.1"
   }
 }
