@@ -2,6 +2,7 @@ function orderform() {
     const form = document.querySelector('.order__form');
     const sendBtn = document.querySelector('#submitOrder');
     const mainbody = document.querySelector('body');
+    //const activeWindow = document.querySelector('.maincontent');
 
     const modal = document.createElement('div');
     const modalText = document.createElement('p');
