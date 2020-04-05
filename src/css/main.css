@@ -438,7 +438,7 @@ p {
 
 .maincontent {
   height: 100%;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /*.wrapper:after {
@@ -584,8 +584,8 @@ button {
 }
 
 .pagination__dot {
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background-color: #ffffff;
   border-color: #ffffff;
@@ -595,8 +595,8 @@ button {
 .pagination__dot:before {
   content: "";
   display: inline-block;
-  width: 0.625rem;
-  height: 0.625rem;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: 0.0625rem solid transparent;
   background-color: transparent;
@@ -608,6 +608,10 @@ button {
 
 .pagination__item--active .pagination__dot:before {
   border-color: inherit;
+}
+
+.pagination__dot--black {
+  border-color: #5e5e5e;
 }
 
 .we {
@@ -776,7 +780,7 @@ button {
     left: 0;
     right: -5%;
     justify-content: center;
-    z-index: 90;
+    z-index: 1000;
   }
   .header-menu__list.active {
     display: flex;
