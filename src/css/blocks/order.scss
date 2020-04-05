@@ -157,5 +157,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include phones {
+        width: 75%;
+        height: 65%;
+        left: 12%;
+    }
     
 }

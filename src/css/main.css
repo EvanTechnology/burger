@@ -1513,6 +1513,13 @@ button {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .response {
+    width: 75%;
+    height: 65%;
+    left: 12%;
+  }
+}
 
 .hamburger__menu {
   position: fixed;
