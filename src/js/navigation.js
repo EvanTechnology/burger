@@ -5,8 +5,8 @@ const pagination = $('.pagination__item');
 const activemenu = $('.header-menu__list');
 const paginationDots = $('.pagination__dot');
 const paginationDotsActive = document.querySelectorAll('.pagination__dot::before');
-//const md = new MobileDetect(window.navigator.userAgent);
-//const isMobile = md.mobile();
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
 console.log(paginationDotsActive);
 $(window).on('wheel' , e => {
     const deltaY = e.originalEvent.deltaY;
@@ -98,7 +98,7 @@ $('[data-scroll-to]').on('click', e => {
 });
 
 // toushswipe and mobile-detect libs don't work
-/* if(isMobile) {
+if(isMobile) {
     $('body').swipe({
         swipe:(event, direction) => {
             let scrollDirection;
@@ -111,4 +111,4 @@ $('[data-scroll-to]').on('click', e => {
         scrollSection(scrollDirection);
     }
 });
-} */
+}
