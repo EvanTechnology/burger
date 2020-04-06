@@ -7,7 +7,13 @@ const paginationDots = $('.pagination__dot');
 const paginationDotsActive = document.querySelectorAll('.pagination__dot::before');
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
-console.log(paginationDotsActive);
+const firstPageArrow = $('.page-control');
+
+$(firstPageArrow).on('click', e => {
+    e.preventDefault();
+    scrollSection('next');
+});
+
 $(window).on('wheel' , e => {
     const deltaY = e.originalEvent.deltaY;
 

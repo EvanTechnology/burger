@@ -717,7 +717,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 .title--black {
@@ -997,7 +997,7 @@ button {
 }
 
 .team__title {
-  padding-top: 6.25rem;
+  padding-top: 5.25rem;
   padding-left: 5%;
   margin-bottom: 2.25rem;
 }
@@ -1512,6 +1512,11 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .response {
+    height: 82%;
+  }
 }
 @media screen and (max-width: 480px) {
   .response {
